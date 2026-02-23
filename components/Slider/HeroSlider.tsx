@@ -17,7 +17,7 @@ const HeroSlider = () => {
                   priority
                   className="object-contain"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <h2 className="text-white text-4xl md:text-6xl font-bold text-center px-4">
                     {slide.title}
                   </h2>
