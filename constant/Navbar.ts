@@ -10,7 +10,7 @@ export const navItems: NavItem[] = [
   },
   {
     label: "Contact Us",
-    href: "/contact",
+   href: "https://wa.me/358413254900?text=Hei!%20Haluaisin%20lisätietoa%20ruokalistastanne.",
     type: "button",
   },
 ]
