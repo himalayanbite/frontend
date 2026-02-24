@@ -3,7 +3,7 @@ import { SlideItem } from "@/types/SlideItem.types";
 export const heroslides:SlideItem[] = [
   {
     id: 1,
-    image: "/heroslider2.png",
+    image: "/heroslider1.png",
     title: "",
   },
   // {

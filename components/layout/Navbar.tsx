@@ -9,8 +9,8 @@ const logoImage = "/logo.png";
 
 export default function Navbar() {
   return (
-    <header className="w-full border-b bg-white mt-5">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+    <header className="w-full  bg-[#fffbf0]">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4">
 
         <Link href="/" className="flex items-center">
           <Image
@@ -19,7 +19,7 @@ export default function Navbar() {
             width={200}
             height={200}
             priority
-            className="object-contain"
+            className="object-cover"
           />
         </Link>
 

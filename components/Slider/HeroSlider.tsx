@@ -9,13 +9,13 @@ const HeroSlider = () => {
         <CarouselContent>
           {heroslides.map((slide) => (
             <CarouselItem key={slide.id}>
-              <div className="relative h-[80vh] w-full">
+             <div className="relative h-[35vh] md:h-[80vh]  lg:h-[90vh] w-full">
                 <Image
                   src={slide.image}
                   alt={slide.title}
                   fill
                   priority
-                  className="object-contain"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <h2 className="text-white text-4xl md:text-6xl font-bold text-center px-4">
