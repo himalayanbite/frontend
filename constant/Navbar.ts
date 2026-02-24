@@ -1,16 +1,14 @@
 import { NavItem } from "@/types/NavItem.types";
 
-
 export const navItems: NavItem[] = [
-
   {
     label: "Menu",
-    href: "/menu",
+    href: "/",
     type: "link",
   },
   {
     label: "Contact Us",
-   href: "https://wa.me/358413254900?text=Hei!%20Haluaisin%20lisätietoa%20ruokalistastanne.",
+    href: "https://wa.me/358413254900?text=Hei!%20Haluaisin%20lisätietoa%20ruokalistastanne.",
     type: "button",
   },
-]
+];
