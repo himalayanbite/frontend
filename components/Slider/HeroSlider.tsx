@@ -9,7 +9,7 @@ const HeroSlider = () => {
         <CarouselContent>
           {heroslides.map((slide) => (
             <CarouselItem key={slide.id}>
-             <div className="relative h-[35vh] md:h-[80vh]  lg:h-[90vh] w-full">
+             <div className="relative h-[35vh] md:h-[80vh]  lg:h-[85vh] w-full">
                 <Image
                   src={slide.image}
                   alt={slide.title}
@@ -27,8 +27,8 @@ const HeroSlider = () => {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
+        <CarouselPrevious className="hidden lg:flex left-4" />
+<CarouselNext className="hidden lg:flex right-4" />
       </Carousel>
     </section>
 
