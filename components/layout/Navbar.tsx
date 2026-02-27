@@ -9,7 +9,7 @@ const logoImage = "/logo.png";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#ffffff] shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-white">
       <div className="container mx-auto flex h-24 items-center justify-between px-4">
 
         <Link href="/" className="flex items-center">
