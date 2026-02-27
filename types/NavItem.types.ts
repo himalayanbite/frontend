@@ -1,5 +1,5 @@
 export type NavItem = {
   label: string
   href: string
-  type?: "link" | "button"
+  type: "link"
 }
