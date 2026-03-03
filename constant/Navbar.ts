@@ -1,6 +1,11 @@
 import { NavItem } from "@/types/NavItem.types";
 
 export const navItems: NavItem[] = [
+   {
+    label: "Koti",
+    href: "/",
+    type: "link",
+  },
   {
     label: "À LA CARTE",
     href: "/menu",
