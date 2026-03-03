@@ -1,4 +1,3 @@
-// types/slider.ts
 export interface Slide {
   id: number;
   title: string;
@@ -8,8 +7,8 @@ export interface Slide {
   description: string;
   image: string;
   bgColor: string;
-  menuLink: string;  // Added for dynamic menu links
-  buttonText?: string; // Optional custom button text
+  menuLink: string;  
+  buttonText?: string; 
 }
 
 export type Slides = Slide[];
