@@ -1,52 +1,74 @@
-import Link from "next/link";
-import { Button } from "../ui/button";
+"use client";
+
+import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
+import SlideContent from "./SlideContent";
+import { slides } from "@/lib/heroslides";
+import SliderArrows from "../ui/arrows";
+import SliderDots from "../ui/dots";
 
 const HeroSlider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  }, []);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  }, []);
+
+  const goToSlide = useCallback((index: number) => {
+    setCurrentSlide(index);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 10000);
+
+    return () => clearInterval(timer);
+  }, [nextSlide]);
+
   return (
-    <section className="w-full flex justify-center pt-4 md:pt-8">
-      <div
-        className="
-        relative
-        w-full sm:w-[90%]
-        h-[55vh] sm:h-[60vh] md:h-[70vh]
-        rounded-xl
-        overflow-hidden
-        shadow-xl
-        bg-gradient-to-br from-emerald-900 via-emerald-700 to-emerald-400
-      "
-      >
-        <div className="h-full flex flex-col justify-center px-6 sm:px-10 md:px-16 text-left">
-          <span className="inline-block w-fit px-4 py-1 mb-5 text-xs sm:text-sm font-semibold tracking-wide bg-white/20 text-white backdrop-blur-sm rounded-full border border-white/30">
-            SPECIAL OFFER
-          </span>
+    <section className="w-full relative">
+      <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[85vh] overflow-hidden">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          >
+            <div className="absolute inset-0">
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                className="object-cover"
+                priority={index === 0}
+                sizes="100vw"
+              />
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${slide.bgColor} opacity-80`}
+              />
+            </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white tracking-wide">
-            LOUNAS BUFFET
-          </h1>
-
-          <div className="mt-4 flex items-baseline gap-4">
-            <span className="text-xl sm:text-2xl text-white/70 line-through">
-              13,50€
-            </span>
-            <span className="text-4xl sm:text-5xl font-bold text-white">
-              10€
-            </span>
+            <SlideContent slide={slide} />
           </div>
+        ))}
 
-          <p className="mt-4 text-sm sm:text-base text-white/90">
-            VOIMASSA 9.3. – 13.3.2026 <br />
-            AVAJAISTARJOUS!
-          </p>
+        <SliderArrows onPrev={prevSlide} onNext={nextSlide} />
 
-          <p className="mt-3 text-xs sm:text-sm text-white/70">
-            Karjalantie 11, 57200, Savonlinna <br />
-            +358 41 325 4900
-          </p>
+        <SliderDots
+          total={slides.length}
+          current={currentSlide}
+          onDotClick={goToSlide}
+        />
+      </div>
 
-          <Button className="mt-6 w-fit bg-white text-emerald-900 hover:bg-white/90 font-semibold px-6 py-5 rounded-lg shadow-md">
-            <Link href={"/menu"}>View Menu</Link>
-          </Button>
-        </div>
+      <div className="absolute bottom-6 right-6 z-20 text-white/70 text-sm font-medium bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full">
+        {currentSlide + 1} / {slides.length}
       </div>
     </section>
   );
