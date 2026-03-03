@@ -2,7 +2,7 @@ import { NavItem } from "@/types/NavItem.types";
 
 export const navItems: NavItem[] = [
   {
-    label: "Menu",
+    label: "À LA CARTE",
     href: "/menu",
     type: "link",
   },
@@ -12,7 +12,7 @@ export const navItems: NavItem[] = [
     type: "link",
   },
   {
-    label: "Contact Us",
+    label: "Ota yhteyttä",
     href: "https://wa.me/358413254900?text=Hei!%20Haluaisin%20lisätietoa%20ruokalistastanne.",
     type: "link",
   },
