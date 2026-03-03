@@ -289,11 +289,7 @@ export default function RestaurantMenu() {
           </section>
         ))}
 
-        {/* Footer note */}
-        <p className="text-center text-xs text-[oklch(0.556_0_0)]">
-          Please inform your server of any allergies or dietary requirements.
-          All prices include VAT.
-        </p>
+     
       </main>
     </div>
   );

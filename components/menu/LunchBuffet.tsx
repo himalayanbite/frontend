@@ -36,10 +36,10 @@ export default function LunchBuffet() {
   return (
     <section className="w-full bg-[oklch(0.97_0_0)]">
       <div className="bg-emerald-100 px-4 pb-8 pt-10 text-center text-primary">
-        <h1 className="mt-1 text-6xl md:text-8xl tracking-tight">
-          Lounas Buffet
+        <h1 className="mt-1 text-6xl font-bold md:text-8xl tracking-tight">
+          LOUNAS BUFFET
         </h1>
-        <p className="mt-3 text-base">
+        <p className="mt-3 text-lg">
           Hinta 13.50 € • Arkisin klo 10:30 –14:30
         </p>
         <p className="text-base text-muted-foreground">

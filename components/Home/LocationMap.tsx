@@ -100,11 +100,11 @@ const LocationMap = () => {
                     <span className="font-medium text-gray-900">10:30 - 19:00</span>
                   </div>
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span className="text-gray-700">Saturday</span>
-                    <span className="font-medium text-gray-900">11:00 - 21:00</span>
+                    <span className="text-gray-700">Saturday (À LA CARTE only)</span>
+                    <span className="font-medium text-gray-900">12:00 - 20:00</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">Sunday</span>
+                    <span className="text-gray-700">Sunday  (À LA CARTE only)</span>
                     <span className="font-medium text-gray-900">12:00 - 18:00</span>
                   </div>
                 </div>
