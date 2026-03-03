@@ -164,7 +164,7 @@ export default function RestaurantMenu() {
   return (
     <div className="min-h-screen bg-[oklch(0.97_0_0)] font-sans">
       <div className="bg-emerald-100 px-4 pb-8 pt-10 text-center text-primary">
-        <h1 className="mt-1 text-8xl font-bold tracking-tight">AL A CARTE</h1>
+        <h1 className="mt-1 text-8xl font-bold tracking-tight">À LA CARTE</h1>
       </div>
 
       <div className="border-b  w-full px-4 py-4 ">
