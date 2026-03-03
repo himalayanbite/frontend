@@ -6,8 +6,6 @@ import { AllergenInfo, AllergenTag, MenuItem } from "@/types/Menu.types";
 import { ALLERGENS } from "@/data/AllergiesInfo";
 import { menuData } from "@/data/menu";
 
-
-
 function AllergenBadge({ tag }: { tag: AllergenTag }) {
   const info = ALLERGENS[tag];
   return (
@@ -25,7 +23,9 @@ function MenuItemCard({ item }: { item: MenuItem }) {
       <div className="flex-1 min-w-0">
         {/* Name row */}
         <div className="flex flex-wrap items-center gap-2">
-          <span className="font-semibold text-[oklch(0.205_0_0)] leading-tight">{item.name}</span>
+          <span className="font-semibold text-[oklch(0.205_0_0)] leading-tight">
+            {item.name}
+          </span>
           {item.spicy && (
             <span className="inline-flex items-center gap-0.5 rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-semibold text-red-600">
               <Flame className="h-3 w-3" /> Spicy
@@ -40,7 +40,9 @@ function MenuItemCard({ item }: { item: MenuItem }) {
 
         {/* Description */}
         {item.desc && (
-          <p className="mt-1 text-sm text-[oklch(0.556_0_0)] leading-relaxed">{item.desc}</p>
+          <p className="mt-1 text-sm text-[oklch(0.556_0_0)] leading-relaxed">
+            {item.desc}
+          </p>
         )}
 
         {/* Tags */}
@@ -55,25 +57,24 @@ function MenuItemCard({ item }: { item: MenuItem }) {
 
       {/* Price */}
       <div className="shrink-0 text-right">
-        <span className="text-base font-bold text-[oklch(50.8%_0.118_165.612)]">{item.price}</span>
+        <span className="text-base font-bold text-[oklch(50.8%_0.118_165.612)]">
+          {item.price}
+        </span>
       </div>
     </div>
   );
 }
 
-// ── Main component ────────────────────────────────────────────────────────────
-
 export default function RestaurantMenu() {
-  const [activeCategory, setActiveCategory] = useState<string>(menuData[0].category);
+  const [activeCategory, setActiveCategory] = useState<string>(
+    menuData[0].category,
+  );
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
-  const [showAllergens, setShowAllergens] = useState(false);
 
   const tabsRef = useRef<HTMLDivElement>(null);
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
   const isScrollingToSection = useRef(false);
-
-  // ── Tab scroll arrows ───────────────────────────────────────────────────────
 
   const updateArrows = useCallback(() => {
     const el = tabsRef.current;
@@ -95,12 +96,14 @@ export default function RestaurantMenu() {
   }, [updateArrows]);
 
   const scrollTabs = (dir: "left" | "right") => {
-    tabsRef.current?.scrollBy({ left: dir === "left" ? -200 : 200, behavior: "smooth" });
+    tabsRef.current?.scrollBy({
+      left: dir === "left" ? -200 : 200,
+      behavior: "smooth",
+    });
   };
 
-
   useEffect(() => {
-    const STICKY_HEIGHT = 120; 
+    const STICKY_HEIGHT = 120;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -111,7 +114,7 @@ export default function RestaurantMenu() {
           }
         });
       },
-      { rootMargin: `-${STICKY_HEIGHT}px 0px -60% 0px`, threshold: 0 }
+      { rootMargin: `-${STICKY_HEIGHT}px 0px -60% 0px`, threshold: 0 },
     );
 
     menuData.forEach(({ category }) => {
@@ -121,8 +124,6 @@ export default function RestaurantMenu() {
 
     return () => observer.disconnect();
   }, []);
-
-  // ── Click tab → scroll page ─────────────────────────────────────────────────
 
   const handleTabClick = (category: string) => {
     setActiveCategory(category);
@@ -135,72 +136,77 @@ export default function RestaurantMenu() {
     window.scrollTo({ top, behavior: "smooth" });
 
     // Scroll active tab into view
-    const tabEl = tabsRef.current?.querySelector(`[data-tab="${category}"]`) as HTMLElement | null;
-    tabEl?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    const tabEl = tabsRef.current?.querySelector(
+      `[data-tab="${category}"]`,
+    ) as HTMLElement | null;
+    tabEl?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
 
     setTimeout(() => {
       isScrollingToSection.current = false;
     }, 800);
   };
 
-
   useEffect(() => {
-    const tabEl = tabsRef.current?.querySelector(`[data-tab="${activeCategory}"]`) as HTMLElement | null;
-    tabEl?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    const tabEl = tabsRef.current?.querySelector(
+      `[data-tab="${activeCategory}"]`,
+    ) as HTMLElement | null;
+    tabEl?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
   }, [activeCategory]);
-
 
   return (
     <div className="min-h-screen bg-[oklch(0.97_0_0)] font-sans">
-
-      {/* ── Hero header ── */}
       <div className="bg-emerald-100 px-4 pb-8 pt-10 text-center text-primary">
         <h1 className="mt-1 text-8xl font-bold tracking-tight">AL A CARTE</h1>
-
-        {/* Allergen toggle */}
-        <button
-          onClick={() => setShowAllergens((v) => !v)}
-          className="mt-5 inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 text-xs font-medium backdrop-blur transition hover:bg-white/20"
-        >
-          <Info className="h-3.5 w-3.5" />
-          {showAllergens ? "Hide" : "View"} allergen guide
-        </button>
       </div>
 
-      {/* ── Allergen legend ── */}
-      {showAllergens && (
-        <div className="border-b border-[oklch(0.922_0_0)] bg-[oklch(95%_0.052_163.051)] px-4 py-4">
-          <div className="mx-auto max-w-3xl">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[oklch(37.8%_0.077_168.94)]">
-              Allergen & Dietary Guide
-            </p>
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
-              {(Object.entries(ALLERGENS) as [AllergenTag, AllergenInfo][]).map(([tag, info]) => (
-                <div key={tag} className="flex items-center gap-2 text-xs text-[oklch(0.205_0_0)]">
-                  <span className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold ${info.color}`}>
+      <div className="border-b  w-full px-4 py-4 ">
+        <div className="mx-auto max-w-4xl">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+            {(Object.entries(ALLERGENS) as [AllergenTag, AllergenInfo][]).map(
+              ([tag, info]) => (
+                <div
+                  key={tag}
+                  className="flex items-center gap-2 text-sm text-[oklch(0.205_0_0)]"
+                >
+                  <span
+                    className={`shrink-0 rounded-full px-2 py-0.5 text-[10px] font-bold ${info.color}`}
+                  >
                     {info.label}
                   </span>
-                  <span className="text-[oklch(0.556_0_0)]">{info.description}</span>
+                  <span className="text-[oklch(0.556_0_0)]">
+                    {info.description}
+                  </span>
                 </div>
-              ))}
-              <div className="flex items-center gap-2 text-xs text-[oklch(0.205_0_0)]">
-                <span className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-bold text-red-600">
-                  <Flame className="h-3 w-3" /> Spicy
-                </span>
-                <span className="text-[oklch(0.556_0_0)]">Contains chili heat</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs text-[oklch(0.205_0_0)]">
-                <span className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-bold text-amber-600">
-                  <Zap className="h-3 w-3" /> Sizzler
-                </span>
-                <span className="text-[oklch(0.556_0_0)]">Served on sizzling plate</span>
-              </div>
+              ),
+            )}
+            <div className="flex items-center gap-2 text-sm text-[oklch(0.205_0_0)]">
+              <span className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-red-50 px-2 py-0.5 text-[10px] font-bold text-red-600">
+                <Flame className="h-3 w-3" /> Spicy
+              </span>
+              <span className="text-[oklch(0.556_0_0)]">
+                Contains chili heat
+              </span>
+            </div>
+            <div className="flex items-center gap-2 text-sm text-[oklch(0.205_0_0)]">
+              <span className="inline-flex shrink-0 items-center gap-0.5 rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-bold text-amber-600">
+                <Zap className="h-3 w-3" /> Sizzler
+              </span>
+              <span className="text-[oklch(0.556_0_0)]">
+                Served on sizzling plate
+              </span>
             </div>
           </div>
         </div>
-      )}
+      </div>
 
-      {/* ── Sticky tab bar ── */}
       <div className="sticky top-20 z-30 border-b border-[oklch(0.922_0_0)] bg-white shadow-sm">
         <div className="relative mx-auto flex max-w-5xl items-center">
           {/* Left arrow */}
@@ -259,11 +265,15 @@ export default function RestaurantMenu() {
           <section
             key={category}
             data-category={category}
-            ref={(el) => { sectionRefs.current[category] = el; }}
+            ref={(el) => {
+              sectionRefs.current[category] = el;
+            }}
           >
             {/* Category heading */}
             <div className="mb-5 flex items-center gap-3">
-              <h2 className="text-xl font-bold text-[oklch(0.205_0_0)]">{category}</h2>
+              <h2 className="text-xl font-bold text-[oklch(0.205_0_0)]">
+                {category}
+              </h2>
               <span className="h-px flex-1 bg-[oklch(0.922_0_0)]" />
               <span className="text-xs font-medium text-[oklch(0.556_0_0)]">
                 {items.length} {items.length === 1 ? "item" : "items"}
@@ -281,7 +291,8 @@ export default function RestaurantMenu() {
 
         {/* Footer note */}
         <p className="text-center text-xs text-[oklch(0.556_0_0)]">
-          Please inform your server of any allergies or dietary requirements. All prices include VAT.
+          Please inform your server of any allergies or dietary requirements.
+          All prices include VAT.
         </p>
       </main>
     </div>
