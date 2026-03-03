@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Himalayan Bite",
-  description: "Eat, sleep, repeat",
+  description: "Healthy Bites, Endless Vibes | Terveelliset herkut, fiilis katossa.",
 };
 
 export default function RootLayout({
