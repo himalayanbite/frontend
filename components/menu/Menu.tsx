@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight, Flame, Zap, Info } from "lucide-react";
+import { ChevronLeft, ChevronRight, Flame, Zap } from "lucide-react";
 import { AllergenInfo, AllergenTag, MenuItem } from "@/types/Menu.types";
 import { ALLERGENS } from "@/data/AllergiesInfo";
-import { menuData } from "@/data/menu";
+import { menuData } from "@/data/MenuFin";
 
 function AllergenBadge({ tag }: { tag: AllergenTag }) {
   const info = ALLERGENS[tag];
