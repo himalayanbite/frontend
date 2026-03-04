@@ -12,7 +12,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const linkClasses =
-    "block px-3 py-2 rounded-md text-emerald-900 font-medium hover:text-white hover:bg-emerald-700 transition-colors";
+    "flex items-center gap-2 px-3 py-2 rounded-md text-emerald-900 font-medium hover:text-white hover:bg-emerald-700 transition-colors";
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white">
@@ -31,7 +31,8 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <Link key={item.label} href={item.href} className={linkClasses}>
-              {item.label}
+              {item.icon && <item.icon className="w-4 h-4" />}
+              <span>{item.label}</span>
             </Link>
           ))}
         </nav>
@@ -47,8 +48,9 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white/95 backdrop-blur-md shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white/80 backdrop-blur-lg shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -65,12 +67,14 @@ export default function Navbar() {
         <nav className="flex flex-col gap-3 px-6 py-4">
           {navItems.map((item) => (
             <Link key={item.label} href={item.href} className={linkClasses}>
-              {item.label}
+              {item.icon && <item.icon className="w-5 h-5" />}
+              <span>{item.label}</span>
             </Link>
           ))}
         </nav>
       </div>
 
+      {/* Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/30 z-40"
