@@ -39,16 +39,14 @@ export default function LunchBuffet() {
         <h1 className="mt-1 text-6xl font-bold md:text-8xl tracking-tight">
           LOUNAS BUFFET
         </h1>
-        <p className="mt-3 text-lg">
-          Hinta 13.50 € • Arkisin klo 10:30 –14:30
-        </p>
+        <p className="mt-3 text-lg">Hinta 13.50 € • Arkisin klo 10:30 –14:30</p>
         <p className="text-base text-muted-foreground">
           Eläkeläisen hinta 12.00 € klo 13.00 –14.30
         </p>
       </div>
 
       <div className="sticky top-20 z-40 bg-white border-b">
-        <div className="mx-auto max-w-4xl flex overflow-x-auto whitespace-nowrap">
+        <div className="mx-auto max-w-4xl flex overflow-x-auto whitespace-nowrap font-medium">
           {lunchData.map((day) => (
             <button
               key={day.day}
@@ -76,28 +74,33 @@ export default function LunchBuffet() {
         <Tabs value={active}>
           <TabsContent value={active}>
             <div className="bg-white rounded-xl border p-6">
-              <h2 className="text-lg font-bold text-emerald-600 mb-6">
+              <h2 className="text-lg font-bold text-emerald-600 mb-6 flex justify-center">
                 {activeData?.label}
               </h2>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-center">
                 {activeData?.items.map((item, index) => (
-                  <div key={index} className="text-base md:text-base">
-                    {item}
+                  <div
+                    key={index}
+                    className="text-base md:text-base flex justify-center"
+                  >
+                    <span className="max-w-2xl">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t text-sm text-muted-foreground space-y-1">
-                <p>
+              <div className="mt-8 pt-6 border-t text-sm text-muted-foreground space-y-1 flex flex-col items-center">
+                <p className="text-center">
                   Lounas sisältää tuoreen salaatin, keiton, lämpimän ruoan,
                   jälkiruoan sekä teen ja kahvin.
                 </p>
-                <p>
+                <p className="text-center">
                   M = Maidoton • VL = Vähälaktoosinen • L = Laktoositon • G =
                   Gluteeniton • VE = Vegaaninen • VS = Sis. valkosipuli
                 </p>
-                <p>Kysythän lisätietoja allergioista henkilökunnalta.</p>
+                <p className="text-center">
+                  Kysythän lisätietoja allergioista henkilökunnalta.
+                </p>
               </div>
             </div>
           </TabsContent>
