@@ -7,5 +7,5 @@ export const ALLERGENS: Record<AllergenTag, AllergenInfo> = {
   G: { label: "G", description: "gluteeniton", color: "bg-orange-100 text-orange-800" },
   VS: { label: "VS", description: "Sis.valkosipuli", color: "bg-red-100 text-red-800" },
   M: { label: "M", description: "Maidoton", color: "bg-amber-100 text-amber-800" },
-  "contains nuts": { label: "NUTS", description: "Contains nuts", color: "bg-purple-100 text-purple-800" },
+  "sis.pähkinää": { label: "NUTS", description: "sis.pähkinää", color: "bg-purple-100 text-purple-800" },
 };
