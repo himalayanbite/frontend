@@ -58,7 +58,7 @@ const FooterSimple = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {['Home', 'Menu', 'lunch', 'Contact'].map((item) => (
+              {['Koti', 'À LA CARTE', 'Lounas Buffet', 'Ota yhteyttä'].map((item) => (
                 <li key={item}>
                   <Link 
                     href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
@@ -73,7 +73,7 @@ const FooterSimple = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Ota yhteyttä</h3>
             <address className="not-italic text-sm text-gray-300 space-y-2">
               <p className="flex items-center gap-2">
                 <FaMapMarkerAlt className="text-emerald-400" />
