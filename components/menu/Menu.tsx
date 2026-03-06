@@ -192,7 +192,7 @@ export default function RestaurantMenu() {
                 <Flame className="h-3 w-3" /> Spicy
               </span>
               <span className="text-[oklch(0.556_0_0)]">
-                Contains chili heat
+                Sisältää chililämpöä
               </span>
             </div>
             <div className="flex items-center gap-2 text-sm text-[oklch(0.205_0_0)]">
@@ -200,7 +200,7 @@ export default function RestaurantMenu() {
                 <Zap className="h-3 w-3" /> Sizzler
               </span>
               <span className="text-[oklch(0.556_0_0)]">
-                Served on sizzling plate
+                kuumalla parilalla
               </span>
             </div>
           </div>
