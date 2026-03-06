@@ -1,0 +1,458 @@
+import { MenuData } from "@/types/Menu.types";
+
+export const menuData: MenuData = [
+  {
+    category: "Alkuruuat",
+    items: [
+      {
+        name: "Veg Soup",
+        price: "6,90€",
+        desc: "Kasviskeitto",
+        tags: ["VE", "G"],
+      },
+      {
+        name: "Chicken Soup",
+        price: "6,90€",
+        desc: "Kermainen kanakeitto",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Veg Samosa",
+        price: "7,20€",
+        desc: "Friteerattu nepalilainen kasvispiirakka, 2 kpl",
+        tags: ["VE"],
+      },
+      {
+        name: "King Prawn Pakauda",
+        price: "7,50€",
+        desc: "Rapeaksi friteerattuja jättikatkarapupaloja maustetussa kikhernejauhotaikinassa",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Vegetable and Chicken Pakauda",
+        price: "7,20€",
+        desc: "Rapeaksi friteerattuja kasvis/kanapaloja maustetussa kikhernejauhotaikinassa",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Paneer Pakauda",
+        price: "7,20€",
+        desc: "Rapeaksi friteerattuja paneerpaloja maustetussa kikhernejauhotaikinassa",
+        tags: ["VL", "G"],
+      },
+      {
+        name: "Lamb Sadeko",
+        price: "7,50€",
+        desc: "Tandoori-uunissa grillattuja lampaan sisäfilee paloja kurkun, tomaatin ja sipulin kera",
+        tags: ["L", "G", "VS"],
+      },
+    ],
+  },
+  {
+    category: "Tandoori",
+    items: [
+      {
+        name: "Fish Tikka",
+        price: "22,90€",
+        desc: "Tandoorimarinoitua lohta, chiliä, paprikaa, sipulia ja tomaattia, tulinen. Tarjoillaan kuumalla parilalla.",
+        tags: ["L", "G", "VS"],
+        spicy: true,
+        sizzler: true,
+      },
+      {
+        name: "Himalayan Mixed Sizzler",
+        price: "25,90€",
+        desc: "Lampaan sisäfilettä, tandoorimarinoitua kananrintafilettä, jättikatkarapuja, talon tuorejuustoa, paprikaa, sipulia ja masalakastikella. Tarjoillaan kuumalla parilalla.",
+        tags: ["L", "G", "VS"],
+        sizzler: true,
+      },
+      {
+        name: "Prawn Sizzler",
+        price: "22,90€",
+        desc: "Tandoorimarinoituja jättikatkarapuja, tomaattia, sipulia, chiliä, inkivääriä, paprikaa, tulinen. Tarjoillaan kuumalla parilalla.",
+        tags: ["L", "G", "VS"],
+        spicy: true,
+        sizzler: true,
+      },
+      {
+        name: "Chef Special",
+        price: "22,90€",
+        desc: "Tandoorimarinoituja kananrintapaloja, tuorejuustoa ja kasviksia masalakastikkeessa. Tarjoillaan kuumalla parilalla.",
+        tags: ["L", "G", "VS"],
+        sizzler: true,
+      },
+      {
+        name: "Tandoori Lamb Tikka",
+        price: "22,90€",
+        desc: "Tandoorimarinoitua lampaan sisäfilettä, sipulia, inkivääriä, paprikaa ja chiliä, tulinen. Tarjoillaan kuumalla parilalla.",
+        tags: ["L", "G", "VS"],
+        spicy: true,
+        sizzler: true,
+      },
+    ],
+  },
+  {
+    category: "Kana",
+    items: [
+      {
+        name: "Butter Chicken",
+        price: "18,90€",
+        desc: "Tandoorimarinoituja kanan rintapaloja tomaatti-inkivääri-voi-kermakastikkeessa.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Chicken Korma",
+        price: "16,90€",
+        desc: "Kananrintapaloja curry-kermakastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Chicken Tikka Masala",
+        price: "18,90€",
+        desc: "Tandoorimarinoituja kananrintapaloja masalakastikkeessa, tulinen.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Chicken 65",
+        price: "16,90€",
+        desc: "Kananrintapaloja sipuli ja paprikaa chilikastikkeessa, tulinen.",
+        tags: ["M", "G", "VS"],
+        spicy: true,
+      },
+      {
+        name: "Chicken Tikka",
+        price: "17,90€",
+        desc: "Tandoori marinoitua kanafilettä.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Chicken Saag",
+        price: "17,90€",
+        desc: "Kananrintapaloja pinaatti-kermakastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Chicken Karahi",
+        price: "17,90€",
+        desc: "Tandoorimarinoituja kananrintapaloja, paprikaa ja sipulia curry-kermakastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Chicken Vindalo",
+        price: "18,90€",
+        desc: "Tandoorimarinoituja kananrintapaloja, paistettua perunaa, valkosipulia, tuoretta korianteria, tuoretta chiliä vindalokastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+    ],
+  },
+  {
+    category: "Lammas",
+    items: [
+      {
+        name: "Lamb Masala",
+        price: "18,90€",
+        desc: "Lammasta ja tuoretta korianteria mausteisessa masalakastikkeessa, keskivahva.",
+        tags: ["M", "G", "VS"],
+      },
+      {
+        name: "Lamb Butter Masala",
+        price: "18,90€",
+        desc: "Lammaspaloja cashewpähkinä-tomaatti-masala-kermakastikkeessa.",
+        tags: ["L", "G", "VS", "sis.pähkinää"],
+      },
+      {
+        name: "Karahi Lamb",
+        price: "18,90€",
+        desc: "Lammaspaloja, paprikaa ja sipulia curry-kermakastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Lamb Saag",
+        price: "18,90€",
+        desc: "Lammasta pinaatti-valkosipuli-kookoskermakastikkeessa.",
+        tags: ["M", "G", "VS"],
+      },
+      {
+        name: "Lamb Chilli",
+        price: "18,90€",
+        desc: "Kananrintapaloja ja paprikaa chilikastikkeessa, tulinen.",
+        tags: ["M", "G", "VS"],
+        spicy: true,
+      },
+      {
+        name: "Lamb Vindaloo",
+        price: "18,90€",
+        desc: "Tandoorimarinoituja kananrintapaloja, paistettua perunaa, valkosipulia, tuoretta korianteria, tuoretta chiliä vindalokastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+    ],
+  },
+  {
+    category: "Kala ja Katkarapu",
+    items: [
+      {
+        name: "Fish Chilli",
+        price: "17,50€",
+        desc: "Kalafilepaloja, paprikaa ja sipulia chilikastikkeessa, tulinen.",
+        tags: ["M", "G", "VS"],
+        spicy: true,
+      },
+      {
+        name: "Fish Butter Masala",
+        price: "17,90€",
+        desc: "Friteerattuja kalafileitä, tomaattia, sipulia ja tuoretta paprikaa masala kermakastikkeessa, keskivahva. Tarjoillaan kuumalla parilalla.",
+        tags: ["L", "G", "VS"],
+        sizzler: true,
+      },
+      {
+        name: "Prawn Chilli",
+        price: "20,90€",
+        desc: "Jättikatkarapuja, soijaa, paprikaa, sipulia, valkosipulia, inkivääriä, vihreää chiliä, tulinen.",
+        tags: ["M", "G", "VS"],
+        spicy: true,
+      },
+      {
+        name: "Cashew King Prawn",
+        price: "21,90€",
+        desc: "Jättikatkarapuja cashew pähkinä-curry-kermakastikkeessa.",
+        tags: ["L", "G", "VS", "sis.pähkinää"],
+      },
+    ],
+  },
+  {
+    category: "Kasvis",
+    items: [
+      {
+        name: "Malai Kofta",
+        price: "17,90€",
+        desc: "Friteerattuja kasvispyöryköitä, joissa tuorejuustoa ja rusinoita tomaatti kermakastikkeessa sekä cashew-pähkinöitä.",
+        tags: ["L", "G", "VS", "sis.pähkinää"],
+      },
+      {
+        name: "Vegetable Kofta",
+        price: "16,90€",
+        desc: "Kasvispyöryköitä curry-kookoskermakastikkeessa.",
+        tags: ["VE", "G", "VS"],
+      },
+      {
+        name: "Palak Paneer",
+        price: "17,90€",
+        desc: "Tuorejuustoa pinaatti-kermakastikkeessa.",
+        tags: ["L", "G", "VS"],
+      },
+      {
+        name: "Sag Tofu",
+        price: "16,90€",
+        desc: "Tofupaloja pinaatti-kookoskermakastikkeessa.",
+        tags: ["VE", "G", "VS"],
+      },
+      {
+        name: "Paneer Tikka Masala",
+        price: "19,90€",
+        desc: "Tandoorimarinoitua tuorejuustoa, sipulia ja paprikaa masala-jogurttikastikkeessa, keskivahva. Tarjoillaan kuumalla parilalla.",
+        tags: ["VL", "G", "VS"],
+        sizzler: true,
+      },
+      {
+        name: "Chilli Paneer",
+        price: "17,90€",
+        desc: "Paistettua tuorejuustoa ja paprikaa chili-tomaattikastikkeessa, tulinen.",
+        tags: ["VL", "G", "VS"],
+        spicy: true,
+      },
+      {
+        name: "Shahi Paneer",
+        price: "19,90€",
+        desc: "Tuorejuustoa tomaatti-voi-kerma-kastikkeessa.",
+        tags: ["VL", "G", "VS"],
+      },
+      {
+        name: "Chilli Tofu",
+        price: "16,90€",
+        desc: "Tofua, paprikaa ja sipulia chilikastikkeessa.",
+        tags: ["VE", "G", "VS"],
+        spicy: true,
+      },
+      {
+        name: "Chana Masala",
+        price: "16,90€",
+        desc: "Kikherneitä masalakastikkeessa, keskivahva.",
+        tags: ["VE", "G", "VS"],
+      },
+    ],
+  },
+  {
+    category: "Jälkiruoat",
+    items: [
+      {
+        name: "Himalayan Special Banani",
+        price: "8,90€",
+        desc: "Friteerattua banaania ja rommia, jäätelöä ja kermavaahtoa.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Kulfi",
+        price: "8,90€",
+        desc: "Pistaasimantelista ja cashewpähkinästä valmistettu, sahramilla maustettu jäädyke.",
+        tags: ["L", "G", "sis.pähkinää"],
+      },
+      {
+        name: "Mixed Ice Cream",
+        price: "5,90€",
+        desc: "Kolme jäätelöpalloa, suklaa- tai kinuskikastike valinnan mukaan.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Gulab Jamun",
+        price: "5,90€",
+        desc: "Friteerattuja juustopalloja siirappikastikkeessa.",
+        tags: ["VL", "G"],
+      },
+      {
+        name: "Mango Shake",
+        price: "5,90€",
+        desc: "Mangopirtelö vaniljajäätelöllä.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Mansikka Jäätelö",
+        price: "3,90€",
+        desc: "",
+        tags: ["L", "G"],
+      },
+    ],
+  },
+  {
+    category: "Lasten Menu",
+    items: [
+      {
+        name: "Butter Chicken",
+        price: "6,90€",
+        desc: "Kanaa tomaatti-voi-kermakastikkeessa.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Butter Shrimp",
+        price: "6,90€",
+        desc: "Katkarapuja cashew-voi-kermakastikkeessa.",
+        tags: ["L", "G", "sis.pähkinää"],
+      },
+      {
+        name: "Chicken and Chips",
+        price: "6,90€",
+        desc: "",
+        tags: ["L", "G"],
+      },
+    ],
+  },
+  {
+    category: "Extra Menu",
+    items: [
+      {
+        name: "Kana hampurilainen",
+        price: "7,90€",
+        desc: "",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Juusto hampurilainen",
+        price: "7,90€",
+        desc: "",
+        tags: ["VL", "G"],
+      },
+    ],
+  },
+  {
+    category: "Naan - Leivät",
+    items: [
+      {
+        name: "Tandoori Naan",
+        price: "2,00€",
+        desc: "",
+        tags: ["VL", "G"],
+      },
+      {
+        name: "Valkosipuli Naan",
+        price: "2,90€",
+        desc: "",
+        tags: ["VL", "G"],
+      },
+      {
+        name: "Paneer Naan",
+        price: "3,90€",
+        desc: "",
+        tags: ["VL", "G"],
+      },
+    ],
+  },
+  {
+    category: "Lisukkeet",
+    items: [
+      {
+        name: "Raita",
+        price: "1,90€",
+        desc: "Suuta viilentävä jogurttikastike.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Achar Pickles",
+        price: "1,90€",
+        desc: "",
+        tags: ["VE", "G"],
+      },
+      {
+        name: "Mint Chutney",
+        price: "1,90€",
+        desc: "",
+        tags: ["VE", "G"],
+      },
+      {
+        name: "Mango Chutney",
+        price: "1,90€",
+        desc: "",
+        tags: ["VE", "G"],
+      },
+      {
+        name: "Papad Leipä, Papadum",
+        price: "1,00€",
+        desc: "",
+        tags: ["VE", "G"],
+      },
+    ],
+  },
+  {
+    category: "Kuumat Juomat",
+    items: [
+      {
+        name: "Hot Chocolate",
+        price: "4,90€",
+        desc: "",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Himalayan Tea",
+        price: "3,90€",
+        desc: "Inkiväärillä, sokerilla ja vihreällä kardemummalla maustettu tee, maidolla tai ilman.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Himalayan Coffee",
+        price: "3,90€",
+        desc: "Inkiväärillä ja vihreällä kardemummalla, sokerilla maustettu maitokahvi.",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Green Tea",
+        price: "3,90€",
+        desc: "",
+        tags: ["VE", "G"],
+      },
+      {
+        name: "Irish Coffee",
+        price: "8,90€",
+        desc: "",
+        tags: ["L", "G"],
+      },
+    ],
+  },
+];

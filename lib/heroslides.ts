@@ -12,7 +12,7 @@ export const slides: Slides = [
     image: "/img1.jpg",
     bgColor: "from-emerald-900 via-emerald-700 to-emerald-400",
     menuLink: "/lunch",
-    buttonText: "View Lounas Menu"
+    buttonText: "View Lounas Buffet"
   },
   {
     id: 2,

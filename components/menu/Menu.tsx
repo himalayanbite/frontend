@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
-import { ChevronLeft, ChevronRight, Flame, Zap, Info } from "lucide-react";
+import { ChevronLeft, ChevronRight, Flame, Zap } from "lucide-react";
 import { AllergenInfo, AllergenTag, MenuItem } from "@/types/Menu.types";
 import { ALLERGENS } from "@/data/AllergiesInfo";
-import { menuData } from "@/data/menu";
+import { menuData } from "@/data/MenuFin";
 
 function AllergenBadge({ tag }: { tag: AllergenTag }) {
   const info = ALLERGENS[tag];
@@ -192,7 +192,7 @@ export default function RestaurantMenu() {
                 <Flame className="h-3 w-3" /> Spicy
               </span>
               <span className="text-[oklch(0.556_0_0)]">
-                Contains chili heat
+                Sisältää chililämpöä
               </span>
             </div>
             <div className="flex items-center gap-2 text-sm text-[oklch(0.205_0_0)]">
@@ -200,7 +200,7 @@ export default function RestaurantMenu() {
                 <Zap className="h-3 w-3" /> Sizzler
               </span>
               <span className="text-[oklch(0.556_0_0)]">
-                Served on sizzling plate
+                kuumalla parilalla
               </span>
             </div>
           </div>

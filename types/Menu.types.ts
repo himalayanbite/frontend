@@ -1,5 +1,5 @@
 
-export type AllergenTag = "VE" | "VL" | "L" | "G" | "VS" | "M" | "contains nuts";
+export type AllergenTag = "VE" | "VL" | "L" | "G" | "VS" | "M" | "sis.pähkinää";
 
 export interface MenuItem {
   name: string;

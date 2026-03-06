@@ -10,10 +10,10 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-serif text-emerald-900 mb-4">
-              Find Us Here
+              Löydä meidät täältä
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Visit our restaurant in the heart of Savonlinna
+              Tule ravintolaamme Savonlinnan sydämessä
             </p>
           </div>
           <LocationMap />
