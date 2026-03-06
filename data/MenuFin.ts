@@ -158,7 +158,7 @@ export const menuData: MenuData = [
         name: "Lamb Butter Masala",
         price: "18,90€",
         desc: "Lammaspaloja cashewpähkinä-tomaatti-masala-kermakastikkeessa.",
-        tags: ["L", "G", "VS", "contains nuts"],
+        tags: ["L", "G", "VS", "sis.pähkinää"],
       },
       {
         name: "Karahi Lamb",
@@ -215,7 +215,7 @@ export const menuData: MenuData = [
         name: "Cashew King Prawn",
         price: "21,90€",
         desc: "Jättikatkarapuja cashew pähkinä-curry-kermakastikkeessa.",
-        tags: ["L", "G", "VS", "contains nuts"],
+        tags: ["L", "G", "VS", "sis.pähkinää"],
       },
     ],
   },
@@ -226,7 +226,7 @@ export const menuData: MenuData = [
         name: "Malai Kofta",
         price: "17,90€",
         desc: "Friteerattuja kasvispyöryköitä, joissa tuorejuustoa ja rusinoita tomaatti kermakastikkeessa sekä cashew-pähkinöitä.",
-        tags: ["L", "G", "VS", "contains nuts"],
+        tags: ["L", "G", "VS", "sis.pähkinää"],
       },
       {
         name: "Vegetable Kofta",
@@ -294,7 +294,7 @@ export const menuData: MenuData = [
         name: "Kulfi",
         price: "8,90€",
         desc: "Pistaasimantelista ja cashewpähkinästä valmistettu, sahramilla maustettu jäädyke.",
-        tags: ["L", "G", "contains nuts"],
+        tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Mixed Ice Cream",
@@ -335,7 +335,7 @@ export const menuData: MenuData = [
         name: "Butter Shrimp",
         price: "6,90€",
         desc: "Katkarapuja cashew-voi-kermakastikkeessa.",
-        tags: ["L", "G", "contains nuts"],
+        tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Chicken and Chips",
