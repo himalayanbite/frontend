@@ -164,7 +164,7 @@ export const menuData: MenuData = [
         name: "Lamb Butter Masala",
         price: "18,90€",
         desc: "Lamb pieces in cashew-tomato-masala cream sauce",
-        tags: ["L", "G", "VS", "contains nuts"],
+        tags: ["L", "G", "VS", "sis.pähkinää"],
       },
       {
         name: "Karahi Lamb",
@@ -228,7 +228,7 @@ export const menuData: MenuData = [
         name: "Cashew King Prawn",
         price: "21,90€",
         desc: "King prawns in cashew curry cream sauce",
-        tags: ["L", "G", "VS", "contains nuts"],
+        tags: ["L", "G", "VS", "sis.pähkinää"],
       },
     ],
   },
@@ -239,7 +239,7 @@ export const menuData: MenuData = [
         name: "Malai Kofta",
         price: "17,90€",
         desc: "Deep-fried vegetable balls with fresh cheese and raisins in tomato cream sauce with cashews",
-        tags: ["L", "G", "VS", "contains nuts"],
+        tags: ["L", "G", "VS", "sis.pähkinää"],
       },
       {
         name: "Vegetable Kofta",
@@ -307,7 +307,7 @@ export const menuData: MenuData = [
         name: "Kulfi",
         price: "8,90€",
         desc: "Traditional frozen dessert made with pistachio, almonds and cashews, flavored with saffron",
-        tags: ["L", "G", "contains nuts"],
+        tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Mixed Ice Cream",
@@ -334,7 +334,7 @@ export const menuData: MenuData = [
     category: "Kids Menu",
     items: [
       { name: "Butter Chicken", price: "6,90€" },
-      { name: "Butter Shrimp", price: "6,90€", tags: ["contains nuts"] },
+      { name: "Butter Shrimp", price: "6,90€", tags: ["sis.pähkinää"] },
       { name: "Shahi Paneer", price: "6,90€" },
       { name: "Chicken and Chips", price: "6,90€" },
       { name: "Chicken Burger with Fries", price: "7,90€" },
