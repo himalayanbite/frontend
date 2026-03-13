@@ -329,7 +329,7 @@ export const menuData: MenuData = [
         name: "Butter Chicken",
         price: "6,90€",
         desc: "Kanaa cashew-tomaatti-voi-kermakastikkeessa",
-        tags: ["L", "G"],
+        tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Butter Shrimp",
