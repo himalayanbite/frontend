@@ -182,7 +182,7 @@ export const menuData: MenuData = [
       {
         name: "Lamb Vindaloo",
         price: "18,90€",
-        desc: "Tandoorimarinoituja kananrintapaloja, paistettua perunaa, valkosipulia, tuoretta korianteria, tuoretta chiliä vindalokastikkeessa.",
+        desc: " Lammaspaloja, paistettua perunaa, valkosipulia, tuoretta korianteria, tuoretta chiliä vindalokastikkeessa.",
         tags: ["L", "G", "VS"],
       },
     ],
@@ -263,7 +263,7 @@ export const menuData: MenuData = [
       {
         name: "Shahi Paneer",
         price: "19,90€",
-        desc: "Tuorejuustoa tomaatti-voi-kerma-kastikkeessa.",
+        desc: "Tuorejuustoa cashew-tomaatti-voi-kermakastikkeessa",
         tags: ["VL", "G", "VS"],
       },
       {
@@ -328,14 +328,20 @@ export const menuData: MenuData = [
       {
         name: "Butter Chicken",
         price: "6,90€",
-        desc: "Kanaa tomaatti-voi-kermakastikkeessa.",
-        tags: ["L", "G"],
+        desc: "Kanaa cashew-tomaatti-voi-kermakastikkeessa",
+        tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Butter Shrimp",
         price: "6,90€",
         desc: "Katkarapuja cashew-voi-kermakastikkeessa.",
         tags: ["L", "G", "sis.pähkinää"],
+      },
+      {
+        name: "Shahi Paneer",
+        price: "6,90€",
+        desc: "Tuorejuustoa cashew-tomaatti-voi-kermakastikkeessa",
+        tags: ["VL", "G", ],
       },
       {
         name: "Chicken and Chips",
@@ -345,23 +351,7 @@ export const menuData: MenuData = [
       },
     ],
   },
-  {
-    category: "Extra Menu",
-    items: [
-      {
-        name: "Kana hampurilainen",
-        price: "7,90€",
-        desc: "",
-        tags: ["L", "G"],
-      },
-      {
-        name: "Juusto hampurilainen",
-        price: "7,90€",
-        desc: "",
-        tags: ["VL", "G"],
-      },
-    ],
-  },
+
   {
     category: "Naan - Leivät",
     items: [

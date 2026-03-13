@@ -7,7 +7,7 @@ const LocationMap = () => {
     <div className="grid lg:grid-cols-2 gap-6 bg-white rounded-2xl shadow-xl overflow-hidden">
       <div className="h-[450px] lg:h-[500px] w-full relative order-2 lg:order-1">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d959998.8027059439!2d27.714403468352696!3d61.969233048879715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a507857f71da5%3A0xad159d48cd67bc4e!2sSavonlinna!5e0!3m2!1sen!2sfi!4v1772567158318!5m2!1sen!2sfi"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6234881511907!2d28.921972007673986!3d61.86751533674282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a4fa98a072ddd%3A0xebe649e2bd8c511d!2sRavintola%20Himalayan%20Bite!5e0!3m2!1sen!2sfi!4v1773154582545!5m2!1sen!2sfi" 
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -20,7 +20,7 @@ const LocationMap = () => {
 
         <div className="absolute bottom-4 left-4 right-4 lg:hidden">
           <a
-            href="https://maps.google.com/?q=Ravintola+Kripa+Savonlinna"
+            href="https://maps.google.com/?q=Ravintola+Himalayan+Bite"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-lg shadow-lg transition-colors w-full backdrop-blur-sm bg-opacity-90"
@@ -47,7 +47,7 @@ const LocationMap = () => {
                 <p className="text-gray-900 font-medium">Karjalantie 11</p>
                 <p className="text-gray-600">57200 Savonlinna, Finland</p>
                 <a
-                  href="https://maps.google.com/?q=Ravintola+Kripa+Savonlinna"
+                  href="https://www.google.com/maps/place/Ravintola+Himalayan+Bite/@61.867678,28.9196743,391m/data=!3m2!1e3!4b1!4m6!3m5!1s0x469a4fa98a072ddd:0xebe649e2bd8c511d!8m2!3d61.8676755!4d28.9222492!16s%2Fg%2F11z1r82vxr?entry=ttu&g_ep=EgoyMDI2MDMwOC4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm text-emerald-600 hover:text-emerald-700 mt-2 group/link"
