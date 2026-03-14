@@ -3,59 +3,60 @@ import { LunchDay } from "@/types/Lunch.type";
 export const lunchData: LunchDay[] = [
   {
     day: "maanantai",
-    label: "Maanantai 09.03.2026",
+    label: "Maanantai 16.03.2026",
     items: [
       "Kermainen lohikeitto (L+G)",
-      "Nepalilainen Butter Chicken paahdetuilla cashewpähkinöillä (L+G+VS+sis.pähkinää) basmatiriisi(VE+G)",
-      "Makkarastroganoff suolakurkulla ja smetanalla (L+G) voilla höystetty perunamuusi (L+G)",
-      "Grillattua parsakaalia ja kukkakaalia rapealla tofulla ja paahdetuilla kurpitsansiemenillä (VE+G)",
-      "Mango-Vanilla pannacotta (L+G)"
+      "Nepalilainen Chicken Tikka Masala kastikkeessa (L+G+VS) basmatiriisi (VE+G)",
+      "Talon makkara pyttipannua paistetulla kananmunalla (M+G) sinappikurkkusalaatti (VE+G)",
+      "Paneer Tikka - paistettua paneer juustoa, paprikaa, sipulia ja tomaattia jogurttikastikkeessa (VL+G+VS)",
+      "Grillatut tuoreet kasvikset ja tofua Sweet chili -kastikkeella (VE+G+VS)",
+      "Mangolassi kardemummalla ja tuoreella mintulla (L+G)"
     ],
   },
   {
     day: "tiistai",
-    label: "Tiistai 10.03.2026",
+    label: "Tiistai 17.03.2026",
     items: [
-      "Tomaatti-vuohenjuustokeitto (L+G) krutongit (VE)",
-      "Lammasta ja tuoretta korianteria mausteisessa masalakastikkeessa (L+G+VS) basmatiriisi (VE+G)",
-      "Texmex-kanatortillat cheddarjuustolla (VL+VS) paahdettu sipuli (VL) creme fraiche (L+G)",
+      "Bataatti-savuchilisosekeitto (L+G+VS) krutongit (VE)",
+      "Lammasta pinaatti-valkosipuli-kookoskermakastikkeessa (L+G+VS) basmatiriisi (VE+G)",
+      "Tex Mex -kana burritot meksikolaiseen tapaan cheddarjuustolla (VL+VS) tomaattisalsa (VE+G+VS)",
       "Itse tehdyt pinaattiletut (L) puolukkahillo (VE+G)",
-      "Maukas ratatouille tofulla ja herneenversoilla (VE+G+VS)",
+      "Paistetut  kasvikset ja soijapala satay-kuorrutuksella (VE+G+VS+sis.pähkinää)",
       "Himalayan herkullinen jäätelöbaari (L+G)"
     ],
   },
   {
     day: "keskiviikko",
-    label: "Keskiviikko 11.03.2026",
+    label: "Keskiviikko 18.03.2026",
     items: [
-      "Koskenlaskija-savuporokeitto (L+G)",
-      "Mureat broilerin rintafileet curry-mangokastikkeessa (L+G+VS) basmatiriisi (VE+G)",
-      "Talon lohipihvit hollandaisekastikkeella (VL+G) tilliperunat (VE+G)",
-      "Pehmeä bataatti-kukkakaalikorma tofulla ja kookoskermalla (VE+G+VS)",
-      "Vadelma-kermakakku (L)"
+      "Tom yum -rapukeitto (M+G+VS)",
+      "Mureat broilerin rintafileet curry-vindalokastikkeessa (L+G+VS) basmatiriisi (VE+G)",
+      "Talon bolognesekastike (M+G+VS+liha: 100% nautaa) yrtti-spaghetti (L) parmesaanimuru (VL+G)",
+      "Grillatut Teriyaki-kasvikset tofulla ja tuoreella korianterilla (VE+G+VS)",
+      "Talon vadelma-mustikkapiirakka (L) ja vaniljakastike (L+G)"
     ],
   },
   {
     day: "torstai",
-    label: "Torstai 12.03.2026",
+    label: "Torstai 19.03.2026",
     items: [
       "Savupotka-hernekeitto (M+G)",
-      "Talon lihapullat karamellisoidulla sipulilla ja metsäsienikastikkeella (L+G) timjamiperunat (VE+G)",
-      "Grillattua kanan paistileikettä chimichurri-glaseerauksella (M+G+VS) basmatiriisi (VE+G) tomaatti-ananassalsa (VE+G+VS)",
-      "Chana masala - mausteinen kasvis-kikhernecurry tofulla (VE+G+VS) basmatiriisi (VE+G)",
-      "Talon letut (L) oman keittiön mansikkahillo (VE+G) vaniljavaahto (L+G) jäätelo (L+G)",
+      "Friteerattuja kalafileitä, tomaattia, sipulia ja tuoretta paprikaa chilikastikkeessa (L+G+VS) basmatiriisi (VE+G)",
+      "Talon lihapullat mummon ruskeassa kastikkeessa (L+G) rosmariini perunat (VE+G)",
+      "Nepalilainen kukkakaali- ja tofumasala tuoreella babypinaatilla (VE+G+VS)",
+      "Talon letut (L) oman keittiön mansikkahillo (VE+G) vaniljavaahto (L+G) jäätelö (L+G)",
       "Gluteenittomat vegaaniset letut (VE+G)"
     ],
   },
   {
     day: "perjantai",
-    label: "Perjantai 13.03.2026",
+    label: "Perjantai 20.03.2026",
     items: [
-      "Pinaattikeitto (L+G) keitetty kananmuna",
-      "Korealaisella BBQ kastikkeella grillattua possua ja tuoreella kevätsipulilla (M+G+VS) uunissa paahdetut lohkoperunat (VE+G)",
-      "Mausteinen nepalilainen chicken 65 (M+G+VS) basmatiriisi (VE+G) kurkkuraita (L+G)",
-      "Chilillä rikastetut bataatti- ja porkkanalohkot tofulla ja edamamepavuilla (VE+G+VS)",
-      "Snickers-mousse (L+G+sis.pähkinää)"
+      "Samettinen kukkakaalikeitto (L+G)",
+      "Talon paneroitu currylla maustettu kanan rintafilettä (L+G+VS) lohkoperunat (VE+G) kurkkuraita (L+G)",
+      "Aasialaista karamellipossua tuoreella korianterilla (M+G+VS) basmatiriisi (VE+G)",
+      "Täyteläinen Butter tofu tuoreilla kasviksilla (VE+G+sis.pähkinää)",
+      "Mustikkarahka (L+G) granola (M)"
     ],
   },
 ];
