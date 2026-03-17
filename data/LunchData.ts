@@ -31,7 +31,7 @@ export const lunchData: LunchDay[] = [
     items: [
       "Tom yum -rapukeitto (M,G,VS)",
       "Mureat broilerin rintafileet curry-vindalokastikkeessa (L,G,VS) basmatiriisi (VE,G)",
-      "Talon bolognesekastike (M,G,VS,liha: 100% nautaa) yrtti-spaghetti (L) parmesaanimuru (VL,G)",
+      "Talon bolognesekastike (M,G,VS) yrtti-spaghetti (L) parmesaanimuru (VL,G)",
       "Grillatut Teriyaki-kasvikset tofulla ja tuoreella korianterilla (VE,G,VS)",
       "Talon vadelma-mustikkapiirakka (L) ja vaniljakastike (L,G)"
     ],
