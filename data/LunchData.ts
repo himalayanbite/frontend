@@ -3,60 +3,62 @@ import { LunchDay } from "@/types/Lunch.type";
 export const lunchData: LunchDay[] = [
   {
     day: "maanantai",
-    label: "Maanantai 16.03.2026",
+    label: "Maanantai 23.03.2026",
     items: [
       "Kermainen lohikeitto (L.G)",
-      "Chicken Tikka Masala (L.G.VS) basmatiriisi (VE.G)",
-      "Talon makkara pyttipannulla ja paistettu kananmuna (M.G)",
-      "Paneer Tikka jogurttikastikkeessa (VL.VS)",
-      "Grillatut kasvikset ja tofu sweet chili -kastikkeella (VE.G.VS)",
-      "Mangolassi kardemummalla ja mintulla (L.G)"
+      "Nepalilainen Butter Chicken paahdetuilla cashewpähkinöillä (L.G.VS+sis.pähkinää) Kurkuma riisi (VE.G)",
+      "Lammas täyteläisessä chili-masalakastikkeessa (M.G.VS)",
+      "Friteeratut katkaravut maustetussa kikhernejauho taikinassa (L.G)",
+      "Kasvispyöryköitä kookosmaito curry kastikkeessa ja tuoreella korianterilla (Vegan.G.VS)",
+      "Omena crumble (L) vaniljakastike (L.G)"
     ],
   },
   {
     day: "tiistai",
-    label: "Tiistai 17.03.2026",
+    label: "Tiistai 24.03.2026",
     items: [
-      "Bataatti–savuchili sosekeitto ja krutongit (L.G)",
-      "Lammas pinaatti–valkosipuli–kookoskermakastikkeessa (L.G.VS) basmatiriisi (VE.G)",
-      "Tex Mex -kana burrito cheddarilla ja tomaattisalsalla (VL)",
-      "Itse tehdyt pinaattiletut (L) puolukkahillo (VE.G)",
-      "Paistetut kasvikset ja soijapala satay-kastikkeella (VE.G.VS)",
+      "Kermainen herkkusienikeitto (L.G) ja krutongit (VE)",
+      "Talon lammaslihapullat pehmeässä kookos-kermakastikkeessa (L.G) sahramiriisi (VE.G)",
+      "Mureaa kanaa Tikka Masala -kastikkeessa (L.G.VS)",
+      "Katkarapunuudeliwokki nepalilaiseen tapaan tuoreilla kasviksilla (L)",
+      "Dal fry – mausteinen linssicurry tofulla ja babypinaatilla (Vegan.G.VS)",
       "Himalayan Ice-cream bar (L)"
     ],
   },
   {
     day: "keskiviikko",
-    label: "Keskiviikko 18.03.2026",
+    label: "Keskiviikko 25.03.2026",
     items: [
-      "Tom Yum -rapukeitto (M.G.VS)",
-      "Broilerin rintafile curry-vindalokastikkeessa (M.G.VS) basmatiriisi (VE.G)",
-      "Talon bolognese (M.G.VS) yrtti-spagetti parmesaanilla (VL)",
-      "Teriyaki-kasvikset tofulla ja korianterilla (VE.G.VS)",
-      "Vadelma–mustikkapiirakka ja vaniljakastike (L)"
+      "Savuporo-Koskenlaskijakeitto (L.G)",
+      "Nepalilainen Butter Chicken paahdetuilla cashewpähkinöillä (L.G.VS+sis.pähkinää) basmatiriisi (VE.G)",
+      "Possuwokki kasviksilla, kevätsipulilla ja seesaminsiemenillä (M.G.VS)",
+      "Rapeat minispringrollit (L) sweetchilikastike (VE.G.VS)",
+      "Kurpitsa-kikhernecurry tuoreella pinaatilla ja soijakermalla (Vegan.G.VS)",
+      "Mustikka-pannacotta (L.G)"
     ],
   },
   {
     day: "torstai",
-    label: "Torstai 19.03.2026",
+    label: "Torstai 26.03.2026",
     items: [
       "Hernekeitto savupotkalla (M.G)",
-      "Friteerattu kalafile chilikastikkeessa (M.G.VS) basmatiriisi (VE)",
-      "Talon lihapullat ruskeassa kastikkeessa (L.G.VS) rosmariiniperunat (VE)",
-      "Nepalilainen kukkakaali–tofumasala babypinaatilla (VE.G.VS)",
-      "Letut (L) mansikkahillolla (VE.G), vaniljavaahdolla ja jäätelöllä (L.G)",
-      "Gluteenittomat vegaaniset letut"
+      "Himalajan special – kanan tikka (L.G) basmatiriisi (L.G.VS)",
+      "Talon lihapullat tomaatti-kermakastikkeessa (L.G) Garlic peruna (VE.G)",
+      "Kasvispakora – friteerattuja kasviksia kikhernejauhotaikinassa (L.G)",
+      "Grillatut tuoreet kasvikset ja tofua chilikastikkeella (VE.G.VS)",
+      "Talon letut (L) mansikkahillolla (VE.G), vaniljavaahdolla ja jäätelöllä (L.G)"
     ],
   },
   {
     day: "perjantai",
-    label: "Perjantai 20.03.2026",
+    label: "Perjantai 27.03.2026",
     items: [
-      "Samettinen kukkakaalikeitto (L.G)",
-      "Talon paneroitu currymaustettu broilerin rintafile (M.G.VS) lohkoperunat (VE.G) aioli (L.VS)",
-      "Aasialainen karamellipossu (M.G.VS) basmatiriisi (VE.G)",
-      "Butter tofu tuoreilla kasviksilla (VE.G.VS.sis.pähkinä)",
-      "Mustikkarahka ja granola (L.G)"
+      "Tomaatti-vuohenjuustokeitto (L.G) krutongit (VE)",
+      "Saag chicken – kanaa pinaatti-currykermakastikkeessa (L.G) basmatiriisi (VE.G)",
+      "Talon lohipihvi täyteläisessä hollandaisekastikkeessa (L.G) ranskalaiset (VE.G)",
+      "Kana briyani, paistettua riisiä, sipulia, inkivääriä ja tuoretta chiliä (L.G.VS)",
+      "Peruna-kukkakaali tofu masala kastike (VE.G.VS)",
+      "Friteerattuja churroja (VL) suklaakastike (L.G)"
     ],
   },
 ];
