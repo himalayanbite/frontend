@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { Weekday } from "@/types/Lunch.type";
 import { lunchData } from "@/data/LunchData";
 
+/* Short Finnish weekday labels */
 const shortWeekdayLabel: Record<Weekday, string> = {
   maanantai: "Ma",
   tiistai: "Ti",
@@ -34,77 +34,88 @@ export default function LunchBuffet() {
   );
 
   return (
-    <section className="w-full bg-[oklch(0.97_0_0)]">
-      <div className="bg-emerald-100 px-4 pb-8 pt-10 text-center text-primary">
-        <h1 className="mt-1 text-6xl font-bold md:text-8xl tracking-tight">
-          LOUNAS BUFFET
-        </h1>
-        <p className="mt-3 text-lg">Hinta 13.50 € • Arkisin klo 10:30 –14:30</p>
-        <p className="text-base text-muted-foreground">
-          Eläkeläisen hinta 12.00 € klo 13.00 –14.30
-        </p>
-      </div>
+    <section className="min-h-screen bg-gradient-to-b from-emerald-50 to-white py-6 md:py-10">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
 
-      <div className="sticky top-20 z-40 bg-white border-b">
-        <div className="mx-auto max-w-4xl flex overflow-x-auto whitespace-nowrap font-medium">
-          {lunchData.map((day) => (
-            <button
-              key={day.day}
-              onClick={() => setActive(day.day)}
-              className={`relative px-6 py-4 text-base transition ${
-                active === day.day
-                  ? "text-emerald-600"
-                  : "text-muted-foreground"
-              }`}
-            >
-              <span className="md:hidden">{shortWeekdayLabel[day.day]}</span>
-              <span className="hidden md:inline">
-                {day.label.split(" ")[0]}
-              </span>
-
-              {active === day.day && (
-                <span className="absolute bottom-0 left-0 h-0.5 w-full bg-emerald-600" />
-              )}
-            </button>
-          ))}
+        {/* Header */}
+        <div className="text-center mb-6 md:mb-10">
+          <h1 className="text-3xl md:text-6xl font-bold tracking-tight text-emerald-700">
+            Lounas Buffet
+          </h1>
+          <p className="mt-2 md:mt-3 text-sm md:text-lg">
+            Hinta 13.50 € • Arkisin klo 10:30 –14:30
+          </p>
+          <p className="text-xs md:text-sm text-muted-foreground">
+            Eläkeläisen hinta 12.00 € klo 13.00 –14.30
+          </p>
         </div>
-      </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-10">
-        <Tabs value={active}>
-          <TabsContent value={active}>
-            <div className="bg-white rounded-xl border p-6">
-              <h2 className="text-lg font-bold text-emerald-600 mb-6 flex justify-center">
+        <div className="grid md:grid-cols-4 gap-6 md:gap-8">
+
+          {/* Day Selector */}
+          <div className="flex md:flex-col gap-2 md:gap-3 overflow-x-auto md:overflow-visible no-scrollbar snap-x snap-mandatory">
+
+            {lunchData.map((day) => (
+              <button
+                key={day.day}
+                onClick={() => setActive(day.day)}
+                className={`snap-start flex-shrink-0 px-4 py-2 md:px-4 md:py-3 rounded-full md:rounded-xl text-sm md:text-sm font-medium transition whitespace-nowrap
+                ${
+                  active === day.day
+                    ? "bg-emerald-600 text-white shadow-md"
+                    : "bg-white border text-gray-600 hover:bg-emerald-50"
+                }`}
+              >
+                <span className="md:hidden">
+                  {shortWeekdayLabel[day.day]}
+                </span>
+
+                <span className="hidden md:inline">
+                  {day.label}
+                </span>
+              </button>
+            ))}
+
+          </div>
+
+          <div className="md:col-span-3">
+
+            <div className="bg-white rounded-2xl shadow-lg p-4 md:p-6 border">
+
+              <h2 className="text-lg md:text-2xl font-bold text-emerald-600 mb-4 md:mb-6 text-center">
                 {activeData?.label}
               </h2>
 
-              <div className="space-y-4 text-center">
+              <div className="grid gap-3 md:gap-4">
                 {activeData?.items.map((item, index) => (
                   <div
                     key={index}
-                    className="text-base md:text-base flex justify-center"
+                    className="p-3 md:p-4 rounded-xl border bg-emerald-50 hover:bg-emerald-100 transition"
                   >
-                    <span className="max-w-2xl">{item}</span>
+                    <p className="text-sm md:text-base font-medium text-center">
+                      {item}
+                    </p>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-8 pt-6 border-t text-sm text-muted-foreground space-y-1 flex flex-col items-center">
-                <p className="text-center">
-                  Lounas sisältää tuoreen salaatin, keiton, lämpimän ruoan,
+              {/* Footer */}
+              <div className="mt-6 md:mt-8 pt-4 md:pt-6 border-t text-xs md:text-sm text-muted-foreground space-y-2 text-center">
+                <p>
+                  Lounas sisältää salaatin, keiton, lämpimän ruoan,
                   jälkiruoan sekä teen ja kahvin.
                 </p>
-                <p className="text-center">
+                <p>
                   M = Maidoton • VL = Vähälaktoosinen • L = Laktoositon • G =
-                  Gluteeniton • VE = Vegaaninen • VS = Sis. valkosipuli
+                  Gluteeniton • VS = Sis. valkosipuli
                 </p>
-                <p className="text-center">
-                  Kysythän lisätietoja allergioista henkilökunnalta.
-                </p>
+                <p>Kysythän allergioista henkilökunnalta.</p>
               </div>
+
             </div>
-          </TabsContent>
-        </Tabs>
+
+          </div>
+        </div>
       </div>
     </section>
   );
