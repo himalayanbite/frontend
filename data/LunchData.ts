@@ -3,62 +3,58 @@ import { LunchDay } from "@/types/Lunch.type";
 export const lunchData: LunchDay[] = [
   {
     day: "maanantai",
-    label: "Maanantai 23.03.2026",
+    label: "Maanantai 30.03.2026",
     items: [
-      "Kermainen lohikeitto (L.G)",
+      "Parsakaalisosekeitto (L.G) krutongit (Vegan)",
       "Nepalilainen Butter Chicken (L.G.VS+sis.pähkinää) basmatiriisi (Vegan.G)",
-      "Lammas täyteläisessä chili-masalakastikkeessa (M.G.VS)",
-      "Friteeratut katkaravut maustetussa kikhernejauho taikinassa (L.G)",
-      "Kasvispyöryköitä kookosmaito curry kastikkeessa (Vegan.G.VS)",
-      "Omena crumble (L) vaniljakastike (L.G)"
+      "Shrimps soijalla, paprikalla, sipulilla, valkosipulilla ja inkiväärillä chilikastikkeessa (M.G.VS)",
+      "Possunuudeliwokki (M.VS)",
+      "Kidneypapuja ja kasviksia masalakastikkeessa (Vegan.G.VS)",
+      "Vadelmarahka (L.G)"
     ],
   },
   {
     day: "tiistai",
-    label: "Tiistai 24.03.2026",
+    label: "Tiistai 31.03.2026",
     items: [
-      "Kermainen herkkusienikeitto (L.G)",
-      "Talon lammaskofta kookos-kermakastikkeessa (L.G) basmatiriisi (Vegan.G)",
-      "Kanaa Tikka Masala (L.G.VS)",
-      "Katkarapunuudeliwokki (L)",
-      "Dal fry – mausteinen linssicurry tofulla (Vegan.G.VS)",
-      "Himalayan Ice-cream bar (L)"
+      "Kasvis-linssikeitto (Vegan.G.VS)",
+      "Itsetehty lammaskofta tomaatti-kermakastikkeessa (L.G.VS) garlic peruna (Vegan.G.VS)",
+      "Himalayan Chicken Tikka Masala (L.G.VS) basmatiriisi (Vegan.G)",
+      "Pinaattiletut (L) puolukkahillo (Vegan.G)",
+      "Grillatut kasvikset ja tofu sweet chili -kastike (Vegan.G.VS)",
+      "Snickers-suklaamousse (L.G.+sis.pähkinää)"
     ],
   },
   {
     day: "keskiviikko",
-    label: "Keskiviikko 25.03.2026",
+    label: "Keskiviikko 01.04.2026",
     items: [
-      "Savuporo-Koskenlaskijakeitto (L.G)",
+      "Tomaatti-koskenlaskija keitto (L.G) krutongit (Vegan)",
       "Nepalilainen Butter Chicken (L.G.VS+sis.pähkinää) basmatiriisi (Vegan.G)",
-      "Possuwokki kasviksilla (M.G.VS)",
-      "Rapeat minispringrollit (L) sweetchilikastike (Vegan.G.VS)",
-      "Kurpitsa-kikhernecurry soijakermalla (Vegan.G.VS)",
-      "Mustikka-pannacotta (L.G)"
+      "Grillattu possun ulkofile tandoori-masalakastikkeessa (L.G.VS) garlic peruna (Vegan.G.VS)",
+      "Kasvispakora – friteerattuja kasviksia (Vegan.G)",
+      "Kikherne tofu pinaatti-kookos-kermakastike (Vegan.G.VS)",
+      "Himalayan Ice-cream bar (L)"
     ],
   },
   {
     day: "torstai",
-    label: "Torstai 26.03.2026",
+    label: "Torstai 02.04.2026",
     items: [
       "Hernekeitto savupotkalla (M.G)",
-      "Himalayan special – Chicken tikka (L.G) basmatiriisi (L.G.VS)",
-      "Talon lihapullat tomaatti-kermakastikkeessa (L.G) Garlic peruna (Vegan.G)",
-      "Kasvispakora – friteerattuja kasviksia (L.G)",
-      "Grillatut kasvikset ja tofua chilikastikkeella (Vegan.G.VS)",
-      "Talon letut (L) mansikkahillo (Vegan.G), vaniljavaahto, ice-cream (L.G)"
+      "Himalayan Special – grillattu kanapaistileike sipuli-paprika-chilikastikkeella (M.G.VS) basmatiriisi (Vegan.G)",
+      "Talon lihapullat tomaatti-koskenlaskija-kastikkeessa (L.G.VS) grillattu peruna (Vegan.G)",
+      "Dal Tadka – maustettua linssipataa (Vegan.G.VS)",
+      "Talojussto pallon voi-kermakastikkeessa (VL.G.sis.pähkinää)",
+      "Talon pannukakkua (L) mansikkahillolla (Vegan.G), vaniljavaahdolla ja jäätelöllä (L.G)"
     ],
   },
   {
     day: "perjantai",
-    label: "Perjantai 27.03.2026",
+    label: "Perjantai 03.04.2026",
     items: [
-      "Tomaatti-vuohenjuustokeitto (L.G)",
-      "Saag chicken – kanaa pinaatti-currykermakastikkeessa (L.G) basmatiriisi (Vegan.G)",
-      "Talon lohipihvi hollandaisekastikkeessa (L.G) ranskalaiset (Vegan.G)",
-      "Kana briyani, paistettua riisiä, sipulia, inkivääriä ja kanaa (L.G.VS)",
-      "Peruna kukkakaali tofu masala kastike (Vegan.G.VS)",
-      "Churros (VL) suklaakastike (L.G)"
+      "Hyvää pääsiäistä! Happy Easter.",
+      "À la carte -ruokailu on saatavilla vain klo 12.00–20.00."
     ],
   },
 ];
