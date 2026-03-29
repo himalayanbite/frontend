@@ -7,7 +7,7 @@ export const lunchData: LunchDay[] = [
     items: [
       "Parsakaalisosekeitto (L.G) krutongit (Vegan)",
       "Nepalilainen Butter Chicken (L.G.VS+sis.pähkinää) basmatiriisi (Vegan.G)",
-      "Shrimp chilikastikkeessa (M.G.VS)",
+      "Shrimps chilikastikkeessa (M.G.VS)",
       "Possunuudeliwokki (M.VS)",
       "Kidneypapuja ja kasviksia masalakastikkeessa (Vegan.G.VS)",
       "Vadelmarahka (L.G)"
