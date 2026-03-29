@@ -45,8 +45,8 @@ export const lunchData: LunchDay[] = [
       "Himalayan Special – grillattu kanapaistileike sipuli-paprika-chilikastikkeella (M.G.VS) basmatiriisi (Vegan.G)",
       "Lihapullat tomaatti-koskenlaskija-kastikkeessa (L.G.VS) grillattu peruna (Vegan.G)",
       "Dal Tadka – maustettua linssipataa (Vegan.G.VS)",
-      "Talojussto pallon voi-kermakastikkeessa (VL.G.sis.pähkinää)",
-      "pannukakkua (L) mansikkahillolla (Vegan.G), vaniljavaahdolla ja jäätelöllä (L.G)"
+      "Talon juustopallo voi-kermakastikkeessa (VL, G, sis.pähkinää)",
+      "Pannukakkua (L) mansikkahillolla (Vegan.G), vaniljavaahdolla ja jäätelöllä (L.G)"
     ],
   },
   {
