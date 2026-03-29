@@ -7,7 +7,7 @@ export const lunchData: LunchDay[] = [
     items: [
       "Parsakaalisosekeitto (L.G) krutongit (Vegan)",
       "Nepalilainen Butter Chicken (L.G.VS+sis.pähkinää) basmatiriisi (Vegan.G)",
-      "Shrimps soijalla, paprikalla, sipulilla, valkosipulilla ja inkiväärillä chilikastikkeessa (M.G.VS)",
+      "Shrimp chilikastikkeessa (M.G.VS)",
       "Possunuudeliwokki (M.VS)",
       "Kidneypapuja ja kasviksia masalakastikkeessa (Vegan.G.VS)",
       "Vadelmarahka (L.G)"
@@ -18,10 +18,10 @@ export const lunchData: LunchDay[] = [
     label: "Tiistai 31.03.2026",
     items: [
       "Kasvis-linssikeitto (Vegan.G.VS)",
-      "Itsetehty lammaskofta tomaatti-kermakastikkeessa (L.G.VS) garlic peruna (Vegan.G.VS)",
+      "Lammaskofta tomaatti-kermakastikkeessa (L.G.VS) garlic peruna (Vegan.G.VS)",
       "Himalayan Chicken Tikka Masala (L.G.VS) basmatiriisi (Vegan.G)",
       "Pinaattiletut (L) puolukkahillo (Vegan.G)",
-      "Grillatut kasvikset ja tofu sweet chili -kastike (Vegan.G.VS)",
+      "Grillatut kasvikset ja tofu sweet chili-kastike (Vegan.G.VS)",
       "Snickers-suklaamousse (L.G.+sis.pähkinää)"
     ],
   },
@@ -43,10 +43,10 @@ export const lunchData: LunchDay[] = [
     items: [
       "Hernekeitto savupotkalla (M.G)",
       "Himalayan Special – grillattu kanapaistileike sipuli-paprika-chilikastikkeella (M.G.VS) basmatiriisi (Vegan.G)",
-      "Talon lihapullat tomaatti-koskenlaskija-kastikkeessa (L.G.VS) grillattu peruna (Vegan.G)",
+      "Lihapullat tomaatti-koskenlaskija-kastikkeessa (L.G.VS) grillattu peruna (Vegan.G)",
       "Dal Tadka – maustettua linssipataa (Vegan.G.VS)",
       "Talojussto pallon voi-kermakastikkeessa (VL.G.sis.pähkinää)",
-      "Talon pannukakkua (L) mansikkahillolla (Vegan.G), vaniljavaahdolla ja jäätelöllä (L.G)"
+      "pannukakkua (L) mansikkahillolla (Vegan.G), vaniljavaahdolla ja jäätelöllä (L.G)"
     ],
   },
   {
