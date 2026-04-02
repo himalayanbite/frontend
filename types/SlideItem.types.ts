@@ -1,7 +1,7 @@
 export interface Slide {
   id: number;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   originalPrice?: string;
   discountedPrice: string;
   description: string;

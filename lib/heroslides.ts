@@ -6,10 +6,10 @@ export const slides: Slides = [
   {
     id: 2,
     title: "À LA CARTE",
-    subtitle: "AVAUSTARJOUS",
+    subtitle: "",
     originalPrice: "",
-    discountedPrice: "-20%",
-    description: "VOIMASSA 9.3. – 29.03.2026\nAVAJAISTARJOUS!",
+    discountedPrice: "",
+    description: "",
     image: "/img2.jpg",
     bgColor: "from-teal-900 via-teal-700 to-teal-500",
     menuLink: "/menu",
