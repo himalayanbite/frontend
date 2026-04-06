@@ -321,7 +321,7 @@ export const menuData: MenuData = [
         tags: ["L", "G"],
       },
       {
-        name: "Mango Lassi",
+        name: "Mango/ Banana/ Mixed berries  Lassi",
         price: "4,90€",
         desc: "Mangopirtelö vaniljajäätelöllä.",
         tags: ["L", "G"],
