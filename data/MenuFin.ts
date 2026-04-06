@@ -18,31 +18,31 @@ export const menuData: MenuData = [
       },
       {
         name: "Veg Samosa",
-        price: "7,20€",
+        price: "7,90€",
         desc: "Friteerattu nepalilainen kasvispiirakka, 2 kpl",
         tags: ["VE"],
       },
       {
         name: "King Prawn Pakauda",
-        price: "7,50€",
+        price: "7,90€",
         desc: "Rapeaksi friteerattuja jättikatkarapupaloja maustetussa kikhernejauhotaikinassa",
         tags: ["L", "G"],
       },
       {
         name: "Vegetable and Chicken Pakauda",
-        price: "7,20€",
+        price: "7,90€",
         desc: "Rapeaksi friteerattuja kasvis/kanapaloja maustetussa kikhernejauhotaikinassa",
         tags: ["L", "G"],
       },
       {
         name: "Paneer Pakauda",
-        price: "7,20€",
+        price: "7,90€",
         desc: "Rapeaksi friteerattuja paneerpaloja maustetussa kikhernejauhotaikinassa",
         tags: ["VL", "G"],
       },
       {
         name: "Lamb Sadeko",
-        price: "7,50€",
+        price: "7,90€",
         desc: "Tandoori-uunissa grillattuja lampaan sisäfilee paloja kurkun, tomaatin ja sipulin kera",
         tags: ["L", "G", "VS"],
       },
@@ -192,7 +192,7 @@ export const menuData: MenuData = [
     items: [
       {
         name: "Fish Chilli",
-        price: "17,50€",
+        price: "17,90€",
         desc: "Kalafilepaloja, paprikaa ja sipulia chilikastikkeessa, tulinen.",
         tags: ["M", "G", "VS"],
         spicy: true,
@@ -241,7 +241,7 @@ export const menuData: MenuData = [
         tags: ["L", "G", "VS"],
       },
       {
-        name: "Sag Tofu",
+        name: "saag Tofu",
         price: "16,90€",
         desc: "Tofupaloja pinaatti-kookoskermakastikkeessa.",
         tags: ["VE", "G", "VS"],
@@ -285,7 +285,7 @@ export const menuData: MenuData = [
     category: "Jälkiruoat",
     items: [
       {
-        name: "Himalayan Special Banani",
+        name: "Himalayan Special Banaani",
         price: "8,90€",
         desc: "Friteerattua banaania ja rommia, jäätelöä ja kermavaahtoa.",
         tags: ["L", "G"],
@@ -315,6 +315,12 @@ export const menuData: MenuData = [
         tags: ["L", "G"],
       },
       {
+        name: "Mango Lassi",
+        price: "4,90€",
+        desc: "Mangopirtelö vaniljajäätelöllä.",
+        tags: ["L", "G"],
+      },
+      {
         name: "Mansikka Jäätelö",
         price: "3,90€",
         desc: "",
@@ -327,27 +333,33 @@ export const menuData: MenuData = [
     items: [
       {
         name: "Butter Chicken",
-        price: "6,90€",
+        price: "9,90€",
         desc: "Kanaa cashew-tomaatti-voi-kermakastikkeessa",
         tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Butter Shrimp",
-        price: "6,90€",
+        price: "9,90€",
         desc: "Katkarapuja cashew-voi-kermakastikkeessa.",
         tags: ["L", "G", "sis.pähkinää"],
       },
       {
         name: "Shahi Paneer",
-        price: "6,90€",
+        price: "9,90€",
         desc: "Tuorejuustoa cashew-tomaatti-voi-kermakastikkeessa",
         tags: ["VL", "G", ],
       },
       {
         name: "Chicken and Chips",
-        price: "6,90€",
+        price: "9,90€",
         desc: "",
         tags: ["L", "G"],
+      },
+      {
+        name: "Fries",
+        price: "4,90€",
+        desc: "",
+        tags: ["G"],
       },
     ],
   },
