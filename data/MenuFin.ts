@@ -29,7 +29,13 @@ export const menuData: MenuData = [
         tags: ["L", "G"],
       },
       {
-        name: "Vegetable and Chicken Pakauda",
+        name: "Vegetable Pakauda",
+        price: "7,90€",
+        desc: "Rapeaksi friteerattuja kasvis/kanapaloja maustetussa kikhernejauhotaikinassa",
+        tags: ["L", "G"],
+      },
+      {
+        name: "Chicken Pakauda",
         price: "7,90€",
         desc: "Rapeaksi friteerattuja kasvis/kanapaloja maustetussa kikhernejauhotaikinassa",
         tags: ["L", "G"],
@@ -241,7 +247,7 @@ export const menuData: MenuData = [
         tags: ["L", "G", "VS"],
       },
       {
-        name: "saag Tofu",
+        name: "Saag Tofu",
         price: "16,90€",
         desc: "Tofupaloja pinaatti-kookoskermakastikkeessa.",
         tags: ["VE", "G", "VS"],
@@ -274,7 +280,7 @@ export const menuData: MenuData = [
         spicy: true,
       },
       {
-        name: "Chana Masala",
+        name: "Tofu Chana Masala",
         price: "16,90€",
         desc: "Kikherneitä masalakastikkeessa, keskivahva.",
         tags: ["VE", "G", "VS"],
