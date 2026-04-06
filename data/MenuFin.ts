@@ -323,7 +323,7 @@ export const menuData: MenuData = [
       {
         name: "Mango/ Banana/ Mixed berries  Lassi",
         price: "4,90€",
-        desc: "Mangopirtelö vaniljajäätelöllä.",
+        desc: "Mango/Banana/Mixed berries pirtelö vaniljajäätelöllä.",
         tags: ["L", "G"],
       },
       {
