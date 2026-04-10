@@ -5,8 +5,13 @@ export type Weekday =
   | "torstai"
   | "perjantai";
 
+export interface LunchMenuItem {
+  name: string;
+  description?: string;
+}
+
 export interface LunchDay {
   day: Weekday;
   label: string;
-  items: string[];
+  items: LunchMenuItem[];
 }
