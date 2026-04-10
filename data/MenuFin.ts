@@ -103,7 +103,7 @@ export const menuData: MenuData = [
       {
         name: "Butter Chicken",
         price: "18,90€",
-        desc: "Tandoorimarinoituja kanan rintapaloja tomaatti-inkivääri-voi-kermakastikkeessa.",
+        desc: "Tandoorimarinoituja kanan rintapaloja cashew-tomaatti-inkivääri-voi-kermakastikkeessa.",
         tags: ["L", "G"],
       },
       {
