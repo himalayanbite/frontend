@@ -3,7 +3,7 @@ import { LunchDay } from "@/types/Lunch.type";
 export const lunchData: LunchDay[] = [
   {
     day: "maanantai",
-    label: "Maanantai 06.04.2026",
+    label: "Maanantai 13.04.2026",
     items: [
       {
         name: "Kermainen lohikeitto (L.G)",
@@ -32,7 +32,7 @@ export const lunchData: LunchDay[] = [
   },
   {
     day: "tiistai",
-    label: "Tiistai 07.04.2026",
+    label: "Tiistai 14.04.2026",
     items: [
       {
         name: "Tom Yum -rapukeitto (M.G.VS)",
@@ -66,7 +66,7 @@ export const lunchData: LunchDay[] = [
   },
   {
     day: "keskiviikko",
-    label: "Keskiviikko 08.04.2026",
+    label: "Keskiviikko 15.04.2026",
     items: [
       {
         name: "Palsternakkasosekeitto (L.G)",
@@ -100,7 +100,7 @@ export const lunchData: LunchDay[] = [
   },
   {
     day: "torstai",
-    label: "Torstai 09.04.2026",
+    label: "Torstai 16.04.2026",
     items: [
       {
         name: "Hernekeitto (M.G)",
@@ -134,7 +134,7 @@ export const lunchData: LunchDay[] = [
   },
   {
     day: "perjantai",
-    label: "Perjantai 10.04.2026",
+    label: "Perjantai 17.04.2026",
     items: [
       {
         name: "Pinaattikeitto ja kananmuna (L.G)",
