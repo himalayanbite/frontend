@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import OpeningPopup from "@/components/popup/OpeningPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
   description: "Healthy Bites, Endless Vibes | Terveelliset herkut, fiilis katossa.",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
+        <OpeningPopup imageSrc="/vappu.png" />
         {children}
 
         <Footer />
