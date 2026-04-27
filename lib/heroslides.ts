@@ -6,7 +6,7 @@ export const slides: Slides = [
   {
     id: 2,
     title: "À LA CARTE",
-    subtitle: "",
+    subtitle: "w",
     originalPrice: "",
     discountedPrice: "",
     description: "",
