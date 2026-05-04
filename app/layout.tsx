@@ -32,7 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <OpeningPopup imageSrc="/vappu.png" />
+        <OpeningPopup imageSrc="" />
         {children}
 
         <Footer />
