@@ -3,124 +3,114 @@ import { LunchDay } from "@/types/Lunch.type";
 export const lunchData: LunchDay[] = [
   {
     day: "maanantai",
-    label: "Maanantai 27.04.2026",
+    label: "Maanantai 09.03.2026",
     items: [
+      { name: "Kermainen lohikeitto (L+G)" },
       {
-        name: "Kermainen lohikeitto (L.G)",
+        name: "Nepalilainen Butter Chicken paahdetuilla cashewpähkinöillä (L+G+VS+sis.pähkinää)",
+        description: "Basmatiriisi (VE+G).",
       },
       {
-        name: "Butter Chicken (L.G.VS+sis.pähkinää)",
-        description:
-          "Tandoorimarinoituja kanan rintapaloja cashewpähkinä-voi-kermakastikkeessa.",
+        name: "Makkarastroganoff suolakurkulla ja smetanalla (L+G)",
+        description: "Voilla höystetty perunamuusi (L+G).",
       },
       {
-        name: "Nepalilaistyylinen kanarulla cheddar-kastikkeella (VL.VS)",
+        name: "Grillattua parsakaalia ja kukkakaalia rapealla tofulla ja paahdetuilla kurpitsansiemenillä (VE+G)",
       },
-      {
-        name: "Lamb Biryani (L.G.VS)",
-        description: "Nepalilainen lammasrisotto.",
-      },
-      {
-        name: "Grillatut kasvikset ja tofu chimichurrikastikkeella (VE.G.VS)",
-      },
-      {
-        name: "Mangorahka (L.G)",
-      },
+      { name: "Mango-Vanilla pannacotta (L+G)" },
     ],
   },
   {
     day: "tiistai",
-    label: "Tiistai 28.04.2026",
+    label: "Tiistai 10.03.2026",
     items: [
       {
-        name: "Tom Yum -rapukeitto (M.G.VS)",
+        name: "Tomaatti-vuohenjuustokeitto (L+G)",
+        description: "Krutongit (VE).",
       },
       {
-        name: "Tandoori-paahdetut broilerin paistileikkeet (L.G.VS)",
+        name: "Lammasta ja tuoretta korianteria mausteisessa masalakastikkeessa (L+G+VS)",
+        description: "Basmatiriisi (VE+G).",
       },
       {
-        name: "Nepalilaistyylisesti wokattua porsaan ulkofileetä (L.G.VS)",
-        description: "Chili-teriyakikastikkeella grillattua porsaanlihaa.",
+        name: "Texmex-kanatortillat cheddarjuustolla (VL+VS)",
+        description: "Paahdettu sipuli (VL), creme fraiche (L+G).",
       },
       {
-        name: "Punajuurigratiini (VL.G)",
+        name: "Itse tehdyt pinaattiletut (L)",
+        description: "Puolukkahillo (VE+G).",
       },
       {
-        name: "Tofu ja kikherne masalakastikkeessa (VE.G.VS)",
+        name: "Maukas ratatouille tofulla ja herneenversoilla (VE+G+VS)",
       },
-      {
-        name: "Raparperikiisseli (L.G)",
-        description: "Vaniljavaahtoa (L.G).",
-      },
+      { name: "Himalayan herkullinen jäätelöbaari (L+G)" },
     ],
   },
   {
     day: "keskiviikko",
-    label: "Keskiviikko 29.04.2026",
+    label: "Keskiviikko 11.03.2026",
     items: [
+      { name: "Koskenlaskija-savuporokeitto (L+G)" },
       {
-        name: "Kermainen herkkusienikeitto (L.G)",
+        name: "Mureat broilerin rintafileet curry-mangokastikkeessa (L+G+VS)",
+        description: "Basmatiriisi (VE+G).",
       },
       {
-        name: "Himalayan Chicken 65 (M.G.VS)",
-        description: "Kananrintapaloja, sipulia ja paprikaa chilikastikkeessa.",
+        name: "Talon lohipihvit hollandaisekastikkeella (VL+G)",
+        description: "Tilliperunat (VE+G).",
       },
       {
-        name: "Swadilo lambkofta (L.G.VS+sis.pähkinää)",
-        description:
-          "Lammaskofta cashew-pähkinä-tomaatti-juusto-kermakastikkeessa.",
+        name: "Pehmeä bataatti-kukkakaalikorma tofulla ja kookoskermalla (VE+G+VS)",
       },
-      {
-        name: "Perunat (VE.G.VS)",
-        description:
-          "Perunaa timuripippurilla (Sichuan-pippuri) ja valkosipulilla maustettuna.",
-      },
-      {
-        name: "Nepalilainen Butter tofu (VE.G.VS)",
-      },
-      {
-        name: "Himalayan Ice-cream bar (VL.G)",
-      },
+      { name: "Vadelma-kermakakku (L)" },
     ],
   },
   {
     day: "torstai",
-    label: "Torstai 30.04.2026",
+    label: "Torstai 12.03.2026",
     items: [
+      { name: "Savupotka-hernekeitto (M+G)" },
       {
-        name: "Hernekeitto (M.G)",
+        name: "Talon lihapullat karamellisoidulla sipulilla ja metsäsienikastikkeella (L+G)",
+        description: "Timjamiperunat (VE+G).",
       },
       {
-        name: "Butter Chicken (L.G.VS+sis.pähkinää)",
-        description:
-          "Tandoorimarinoituja kanan rintapaloja cashewpähkinä-voi-kermakastikkeessa.",
+        name: "Grillattua kanan paistileikettä chimichurri-glaseerauksella (M+G+VS)",
+        description: "Basmatiriisi (VE+G), tomaatti-ananassalsa (VE+G+VS).",
       },
       {
-        name: "Lamb chili (M.G.VS)",
-        description:
-          "Inkiväärillä ja valkosipulilla marinoitua grillattua lammaslihaa paprikan ja sipulin kanssa tomaatti-soijakastikkeessa.",
-      },
-      {
-        name: "Valkosipuliperunat (VE.G.VS)",
-      },
-      {
-        name: "Nepalilaistyylisesti wokatut kasvikset ja tofu (VE.G.VS)",
+        name: "Chana masala - mausteinen kasvis-kikhernecurry tofulla (VE+G+VS)",
+        description: "Basmatiriisi (VE+G).",
       },
       {
         name: "Talon letut (L)",
         description:
-          "Mansikkahillolla (Vegan.G), vaniljavaahdolla ja jäätelöllä (L.G).",
+          "Oman keittiön mansikkahillo (VE+G), vaniljavaahto (L+G), jäätelö (L+G).",
       },
+      { name: "Gluteenittomat vegaaniset letut (VE+G)" },
     ],
   },
   {
     day: "perjantai",
-    label: "Perjantai 01.05.2026",
+    label: "Perjantai 13.03.2026",
     items: [
       {
-        name: "Avoinna vappuna normaalien aukioloaikojen mukaan.",
-        description:
-          "Varaa pöytä ja tule nauttimaan kevään juhlapäivästä!",
+        name: "Pinaattikeitto (L+G)",
+        description: "Keitetty kananmuna.",
+      },
+      {
+        name: "Korealaisella BBQ-kastikkeella grillattua possua ja tuoreella kevätsipulilla (M+G+VS)",
+        description: "Uunissa paahdetut lohkoperunat (VE+G).",
+      },
+      {
+        name: "Mausteinen nepalilainen Chicken 65 (M+G+VS)",
+        description: "Basmatiriisi (VE+G), kurkkuraita (L+G).",
+      },
+      {
+        name: "Chilillä rikastetut bataatti- ja porkkanalohkot tofulla ja edamamepavuilla (VE+G+VS)",
+      },
+      {
+        name: "Snickers-mousse (L+G+sis.pähkinää)",
       },
     ],
   },
