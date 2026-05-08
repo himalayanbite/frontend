@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   description: "Healthy Bites, Endless Vibes | Terveelliset herkut, fiilis katossa.",
 };
 
+const imageSrc= "/aitenpaiva.png";
+
 
 export default function RootLayout({
   children,
@@ -32,7 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <OpeningPopup imageSrc="" />
+        <OpeningPopup imageSrc={imageSrc} />
         {children}
 
         <Footer />
