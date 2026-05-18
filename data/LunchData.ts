@@ -22,7 +22,7 @@ export const lunchData: LunchDay[] = [
         name: "Tandoorimarinoidut kasvikset ja tofu (VE.G.VS)",
       },
       {
-        name: "Mustikka piirikka (L)",
+        name: "Mangorahka (L.G)",
       },
     ],
   },
