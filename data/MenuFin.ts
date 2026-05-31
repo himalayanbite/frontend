@@ -181,7 +181,7 @@ export const menuData: MenuData = [
       {
         name: "Lamb Chilli",
         price: "18,90€",
-        desc: "Kananrintapaloja ja paprikaa chilikastikkeessa, tulinen.",
+        desc: "Lammaspaloja ja paprikaa chilikastikkeessa, tulinen.",
         tags: ["M", "G", "VS"],
         spicy: true,
       },

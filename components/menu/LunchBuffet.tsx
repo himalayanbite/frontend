@@ -43,7 +43,7 @@ export default function LunchBuffet() {
             Hinta 13.50 € • Arkisin klo 10:30 – 14:30
           </p>
           <p className="text-xs text-muted-foreground md:text-sm">
-            Eläkeläisen hinta 12.00 € klo 13.00 – 14.30
+            Eläkeläisen hinta 12.00 €
           </p>
         </div>
 
