@@ -7,7 +7,7 @@ const LocationMap = () => {
     <div className="grid lg:grid-cols-2 gap-6 bg-white rounded-2xl shadow-xl overflow-hidden">
       <div className="h-[450px] lg:h-[500px] w-full relative order-2 lg:order-1">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6234881511907!2d28.921972007673986!3d61.86751533674282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a4fa98a072ddd%3A0xebe649e2bd8c511d!2sRavintola%20Himalayan%20Bite!5e0!3m2!1sen!2sfi!4v1773154582545!5m2!1sen!2sfi" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940.6234881511907!2d28.921972007673986!3d61.86751533674282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469a4fa98a072ddd%3A0xebe649e2bd8c511d!2sRavintola%20Himalayan%20Bite!5e0!3m2!1sen!2sfi!4v1773154582545!5m2!1sen!2sfi"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -98,22 +98,29 @@ const LocationMap = () => {
                 </p>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span className="text-gray-700">maanantai - perjantai</span>
+                    <span className="text-gray-700">Maanantai - Torstai</span>
                     <span className="font-medium text-gray-900">
-                      10:30 - 19:00
+                      10:30 - 20:00
+                    </span>
+                   
+                  </div>
+                  <div className="flex justify-between items-center border-b border-gray-100 pb-2">
+                    <span className="text-gray-700">Perjantai</span>
+                    <span className="font-medium text-gray-900">
+                      10:30 - 21:00
                     </span>
                   </div>
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                     <span className="text-gray-700">
-                      lauantai (Vain À LA CARTE )
+                      Lauantai (Vain À LA CARTE )
                     </span>
                     <span className="font-medium text-gray-900">
-                      12:00 - 20:00
+                      12:00 - 21:00
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700">
-                      sunnuntai (Vain À LA CARTE)
+                      Sunnuntai (Vain À LA CARTE)
                     </span>
                     <span className="font-medium text-gray-900">
                       12:00 - 18:00
