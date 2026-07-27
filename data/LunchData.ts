@@ -57,10 +57,11 @@ export const lunchData: LunchDay[] = [
       {
         name: "Bataatti-kikhernecurry kookoskermakastikkeessa ja babypinaatilla (VE.G.VS)",
       },
+      
       {
-        name: "Talon mustikkapiirakka (L.G)",
+       name: "Mokkapalat (L)",
         description:
-          "Appelsiinivaahto (L.G).",
+          "Vaniljakastike (L.G).",
       },
     ],
   },
@@ -158,10 +159,10 @@ export const lunchData: LunchDay[] = [
         description:
           "Nepalilainen kana-risotto.",
       },
-      {
-        name: "Mokkapalat (L)",
+       {
+        name: "Talon mustikkapiirakka (L.G)",
         description:
-          "Vaniljakastike (L.G).",
+          "Appelsiinivaahto (L.G).",
       },
     ],
   },
