@@ -98,24 +98,24 @@ const LocationMap = () => {
                 </p>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span className="text-gray-700">Maanantai - Torstai</span>
+                    <span className="text-gray-700">Maanantai - Perjantai</span>
                     <span className="font-medium text-gray-900">
                       10:30 - 20:00
                     </span>
                    
                   </div>
-                  <div className="flex justify-between items-center border-b border-gray-100 pb-2">
+                  {/* <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                     <span className="text-gray-700">Perjantai</span>
                     <span className="font-medium text-gray-900">
                       10:30 - 21:00
                     </span>
-                  </div>
+                  </div> */}
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                     <span className="text-gray-700">
                       Lauantai (Vain À LA CARTE )
                     </span>
                     <span className="font-medium text-gray-900">
-                      12:00 - 21:00
+                      12:00 - 20:00
                     </span>
                   </div>
                   <div className="flex justify-between items-center">
