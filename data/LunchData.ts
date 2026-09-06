@@ -3,23 +3,22 @@ import { LunchDay } from "@/types/Lunch.type";
 export const lunchData: LunchDay[] = [
   {
     day: "maanantai",
-    label: "Maanantai 31.08.2026",
+    label: "Maanantai 07.09.2026",
     items: [
       {
-        name: "Tom Yam -rapukeitto (M.G.VS)",
+        name: "Kermainen lohikeitto (L.G)",
       },
       {
-        name: "Butter Chicken (L.G.VS+sis.pähkinää)",
+        name: "Chicken Korma (L.G.VS)",
+        description: "Kananrintapaloja curry-kermakastikkeessa.",
+      },
+      {
+        name: "Lamb Kofta Masala (M.G.VS)",
         description:
-          "Tandoorimarinoituja kanan rintapaloja cashewpähkinä-voi-kermakastikkeessa.",
+          "Inkiväärillä ja valkosipulilla marinoituja lampaan jauhelihapullia paprikan ja sipulin masala-kastikkeessa.",
       },
       {
-        name: "Pork Chili (M.G.VS)",
-        description:
-          "Inkiväärillä ja valkosipulilla marinoitua grillattua porsaanlihaa paprikan ja sipulin kanssa tomaatti-soijakastikkeessa.",
-      },
-      {
-        name: "Grillatut kasvikset ja tofu (VE.G.VS)",
+        name: "Tandoori-marinoidut grillatut kasvikset ja tofu (VE.G.VS)",
       },
       {
         name: "Vegetable Pakora (M.G)",
@@ -27,27 +26,28 @@ export const lunchData: LunchDay[] = [
           "Rapeaksi friteerattuja kasviksia maustetussa kikhernejauhotaikinassa.",
       },
       {
-        name: "Mokkapalat (L)",
+        name: "Omena-crumble (L)",
         description: "Vaniljakastike (L.G).",
       },
     ],
   },
+
   {
     day: "tiistai",
-    label: "Tiistai 01.09.2026",
+    label: "Tiistai 08.09.2026",
     items: [
       {
-        name: "Kukkakaalisosekeitto (L.G)",
+        name: "Tomaatti-vuohenjuustokeitto (VL.G)",
       },
       {
-        name: "Swadilo Lamb (L.G.VS+sis.pähkinää)",
+        name: "Butter Chicken (L.G.VS+sis.pähkinää)",
         description:
-          "Lampaanlihaa cashew-pähkinä-tomaatti-juusto-kermakastikkeessa.",
+          "Tandoorimarinoituja kanan rintapaloja cashewpähkinä-voi-kermakastikkeessa.",
       },
       {
-        name: "Garlic Chicken (L.G.VS)",
+        name: "Lamb Vindaloo (M.G.VS)",
         description:
-          "Grillattuja kanapaloja tomaatti-, sipuli- ja valkosipulikastikkeessa.",
+          "Lammaspaloja, paistettua perunaa, valkosipulia, korianteria ja chiliä vindalokastikkeessa.",
       },
       {
         name: "Kukkakaali ja parsakaali Pakora (VE.G.VS)",
@@ -59,45 +59,45 @@ export const lunchData: LunchDay[] = [
         description: "Tarjoillaan tuoreella korianterilla.",
       },
       {
-        name: "Omena-crumble (L)",
-        description: "Vaniljakastike (L.G).",
+        name: "Suklaamousse (L.G)",
+        description: "Karamellipopcornilla.",
       },
     ],
   },
+
   {
     day: "keskiviikko",
-    label: "Keskiviikko 02.09.2026",
+    label: "Keskiviikko 09.09.2026",
     items: [
       {
-        name: "Kermainen lohikeitto (L.G)",
+        name: "Tom Yam -rapukeitto (M.G.VS)",
       },
       {
-        name: "Chicken Masala (L.G)",
+        name: "Garlic Chicken (M.G.VS)",
         description:
-          "Tandoorimarinoituja kanan rintapaloja masalakastikkeessa.",
+          "Tandoorimarinoituja kananrintapaloja valkosipuli-currykastikkeessa.",
       },
       {
-        name: "Pork Vindaloo (L.G.VS)",
+        name: "Fish Korma (L.G.VS)",
         description:
-          "Tandoorimarinoitua possua, paistettua perunaa, valkosipulia, tuoretta korianteria ja tuoretta chiliä vindalokastikkeessa.",
+          "Friteerattuja tilapiakalafileitä, tomaattia, sipulia ja tuoretta paprikaa curry-kermakastikkeessa.",
       },
       {
-        name: "Soya Mattar Paneer (G.VL.VS+sis.pähkinää)",
-        description:
-          "Soijaa, herneitä ja paneerjuustoa cashew-pähkinä-voi-kermakastikkeessa.",
+        name: "Onion Bhajia (sipulipakora) (VE.G)",
+        description: "Paneroitua sipulia kikhernetaikinassa.",
       },
       {
         name: "Grillatut kasvikset ja tofu sweet chili -kastikkeella (VE.G.VS)",
       },
       {
-        name: "Mango-passionrahka (L.G)",
-        description: "Granola (VE).",
+        name: "Matcha Tiramisu (L)",
       },
     ],
   },
+
   {
     day: "torstai",
-    label: "Torstai 03.09.2026",
+    label: "Torstai 10.09.2026",
     items: [
       {
         name: "Hernekeitto (M.G)",
@@ -108,52 +108,53 @@ export const lunchData: LunchDay[] = [
           "Tandoorimarinoituja kanan rintapaloja cashewpähkinä-voi-kermakastikkeessa.",
       },
       {
-        name: "Talon Meatkofta (L.G.VS)",
+        name: "Chili Meat Kofta (M.G.VS)",
         description:
-          "Lampaan ja possun jauhelihapullia minttu-masala-currykastikkeessa.",
+          "Lampaan ja possun jauhelihapyöryköitä, paprikaa, chiliä ja tuoretta korianteria tomaatti-valkosipulikastikkeessa.",
       },
       {
-        name: "Talon Vegetable Fried Momos (M.VS)",
-        description: "Rapeita kasvisnyyttejä.",
+        name: "Vegetable Spring Rolls (VE)",
+        description: "Sweet chili -kastike (VE.G.VS).",
       },
       {
-        name: "Saag Tofu (L.G.VE.VS)",
-        description: "Tofua pinaatti-kookoskermakastikkeessa.",
+        name: "Nepalilaistyylisesti wokatut kasvikset ja tofu (VE.G.VS)",
       },
       {
         name: "Talon letut (L)",
-        description:
-          "Mansikkahillolla (VE.G) ja vaniljavaahdolla (L.G).",
+        description: "Mansikkahillolla (VE.G) ja vaniljavaahdolla (L.G).",
       },
     ],
   },
+
   {
     day: "perjantai",
-    label: "Perjantai 04.09.2026",
+    label: "Perjantai 11.09.2026",
     items: [
       {
-        name: "Juuressosekeitto (L.G)",
+        name: "Paahdettu paprika-juustokeitto (L.G)",
       },
       {
-        name: "Lamb Masala (M.G.VS)",
+        name: "Lamb Butter Masala (L.G.VS)",
         description:
-          "Inkiväärillä ja valkosipulilla marinoitua lammasta paprikan ja sipulin masalakastikkeessa.",
+          "Lammaspaloja cashewpähkinä-tomaatti-masala-kermakastikkeessa.",
       },
       {
-        name: "Fish Curry (M.G.VS)",
+        name: "Chicken Rogan Josh (L.G.VS)",
         description:
-          "Friteerattuja tilapiakalafileitä, tomaattia, sipulia ja tuoretta paprikaa currykastikkeessa.",
+          "Kanaa täyteläisessä curry-punaisessa jogurttikastikkeessa.",
       },
       {
-        name: "Vegetable Samosa (VE)",
+        name: "Palak Paneer (VL.G.VS)",
+        description: "Paneerjuustoa pinaatti-kermakastikkeessa.",
       },
       {
-        name: "Dal Makhani tofulla (VE.G.VS)",
+        name: "Aloo-Gobi Tofu (VE.G.VS)",
         description:
-          "Linssejä, paistettua sipulia ja valkosipulia tomaattikastikkeessa.",
+          "Paistettua perunaa, kukkakaalia ja tofua jeerakuminalla maustetussa masalakastikkeessa.",
       },
       {
-        name: "Snickers Mousse (L.G+sis.pähkinää)",
+        name: "Talon appelsiinikakku (L)",
+        description: "Vaniljakastike (L.G).",
       },
     ],
   },
