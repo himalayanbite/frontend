@@ -1,5 +1,5 @@
 import { NavItem } from "@/types/NavItem.types";
-import { FaHome, FaUtensils, FaConciergeBell,  FaWhatsapp } from 'react-icons/fa';
+import { FaHome, FaUtensils, FaConciergeBell,  FaWhatsapp, FaPhone } from 'react-icons/fa';
 
 export const navItems: NavItem[] = [
    {
@@ -22,8 +22,8 @@ export const navItems: NavItem[] = [
   },
   {
     label: "Ota yhteyttä",
-    href: "https://wa.me/358413254900?text=Hei!%20Haluaisin%20lisätietoa%20ruokalistastanne.",
+    href: "tel:+358413254900",
     type: "link",
-    icon: FaWhatsapp,
+    icon: FaPhone,
   },
 ];
