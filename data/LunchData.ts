@@ -88,7 +88,7 @@ export const lunchData: LunchDay[] = [
         description: "Kikhernejauhotaikinassa paneroituja sipuleita.",
       },
       {
-        name: "Sitruunaposset (L.G)",
+        name: "Mangomousse (L.G)",
       },
     ],
   },
@@ -149,7 +149,7 @@ export const lunchData: LunchDay[] = [
         name: "Nepalilaistyylisesti wokatut kasvikset ja tofu (VE.G.VS)",
       },
       {
-        name: "Mangomousse (L.G)",
+        name: "Sitruunaposset (L.G)",
       },
     ],
   },
