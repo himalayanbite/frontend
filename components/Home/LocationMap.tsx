@@ -100,7 +100,7 @@ const LocationMap = () => {
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                     <span className="text-gray-700">Maanantai - Perjantai</span>
                     <span className="font-medium text-gray-900">
-                      10:30 - 20:00
+                      10:30 - 19:00
                     </span>
                    
                   </div>
