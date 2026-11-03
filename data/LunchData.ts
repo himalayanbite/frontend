@@ -70,38 +70,38 @@ export const lunchData: LunchDay[] = [
       },
     ],
   },
-  {
-    day: "torstai",
-    label: "Torstai 05.11.2026",
-    items: [
-      {
-        name: "Hernekeitto (M.G)",
-      },
-      {
-        name: "Chicken Chili (L.G.VS)",
-        description:
-          "Inkiväärillä ja valkosipulilla marinoitua paistettua kanaa, sipulia ja paprikaa soija-tomaattikastikkeessa.",
-      },
-      {
-        name: "Lamb/Beef Kofta (L.G.VS)",
-        description:
-          "Lampaan- ja naudanlihapyöryköitä kermaisessa masalakastikkeessa.",
-      },
-      {
-        name: "Vegetable Pakauda (VE.G)",
-        description:
-          "Rapeaksi friteerattuja kasviksia maustetussa kikhernejauhotaikinassa.",
-      },
-      {
-        name: "Nepalilaistyylisesti wokatut kasvikset ja tofu (VE.G.VS)",
-      },
-      {
-        name: "Talon letut (L)",
-        description:
-          "Mansikkahillo (VE.G) ja vaniljavaahto (L.G).",
-      },
-    ],
-  },
+ {
+  day: "torstai",
+  label: "Torstai 05.11.2026",
+  items: [
+    {
+      name: "Hernekeitto (M.G)",
+    },
+    {
+      name: "Chicken Chili (L.G.VS)",
+      description:
+        "Inkiväärillä ja valkosipulilla marinoitua paistettua kanaa, sipulia ja paprikaa soija-tomaattikastikkeessa.",
+    },
+    {
+      name: "Pork Butter Masala (L.G.VS+sis.pähkinä)",
+      description:
+        "Possua kermaisessa cashewpähkinä-masalakastikkeessa.",
+    },
+    {
+      name: "Vegetable Pakauda (VE.G)",
+      description:
+        "Rapeaksi friteerattuja kasviksia maustetussa kikhernejauhotaikinassa.",
+    },
+    {
+      name: "Nepalilaistyylisesti wokatut kasvikset ja tofu (VE.G.VS)",
+    },
+    {
+      name: "Talon letut (L)",
+      description:
+        "Mansikkahillo (VE.G) ja vaniljavaahto (L.G).",
+    },
+  ],
+},
   {
     day: "perjantai",
     label: "Perjantai 06.11.2026",
