@@ -96,20 +96,21 @@ const LocationMap = () => {
                 <p className="text-sm font-medium text-emerald-600 uppercase tracking-wider mb-3">
                   Avoinna
                 </p>
+                <div className="flex justify-between items-center border-b border-gray-100 pb-2">
+                    <span className="text-gray-700">Maanantai</span>
+                    <span className="font-medium text-red-600">
+                     Closed
+                    </span>
+                  </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span className="text-gray-700">Maanantai - Perjantai</span>
+                    <span className="text-gray-700">Tiistai - Perjantai</span>
                     <span className="font-medium text-gray-900">
                       10:30 - 19:00
                     </span>
                    
                   </div>
-                  {/* <div className="flex justify-between items-center border-b border-gray-100 pb-2">
-                    <span className="text-gray-700">Perjantai</span>
-                    <span className="font-medium text-gray-900">
-                      10:30 - 21:00
-                    </span>
-                  </div> */}
+                  
                   <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                     <span className="text-gray-700">
                       Lauantai (Vain À LA CARTE )
