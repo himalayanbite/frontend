@@ -13,8 +13,8 @@ import {
 const footerLinks = [
   { label: "Etusivu", href: "/" },
   { label: "Lounas", href: "/lunch" },
-  { label: "À la Carte", href: "/a-la-carte" },
-  { label: "Ota yhteyttä", href: "/contact" },
+  { label: "À la Carte", href: "/menu" },
+  { label: "Ota yhteyttä", href: " tel:+358413254900"},
 ];
 
 const socialLinks = [
