@@ -49,7 +49,7 @@ export default function SlideContent({
           </Link>
 
           <Link
-            href="/a-la-carte"
+            href="/menu"
             className="inline-flex min-h-12 items-center justify-center rounded-lg border border-emerald-800 bg-transparent px-8 py-3 text-sm font-semibold text-emerald-900 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-800"
           >
             À la Carte
