@@ -1,58 +1,84 @@
+
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Slide } from "@/types/SlideItem.types";
+import Image from "next/image";
+import type { Slide } from "@/types/SlideItem.types";
 
 interface SlideContentProps {
   slide: Slide;
+  priority?: boolean;
 }
 
-const SlideContent = ({ slide }: SlideContentProps) => {
+export default function SlideContent({
+  slide,
+  priority = false,
+}: SlideContentProps) {
   return (
-    <div className="relative h-full flex items-center z-10">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl text-white">
-          <div className="sm:pl-8 md:pl-12 lg:pl-16">
-            {slide.subtitle ? (
-              <></>
-            ) : (
-              <span className="inline-block px-3 sm:px-4 py-1 mb-3 sm:mb-4 md:mb-5 text-xs sm:text-sm font-semibold tracking-wide bg-white/20 backdrop-blur-sm rounded-full border border-white/30">
-                {slide.subtitle}
-              </span>
-            )}
+    <div className="mx-auto grid w-full max-w-7xl items-center gap-8 px-5 py-10 sm:px-8 sm:py-14 md:grid-cols-2 md:gap-12 md:py-20 lg:gap-16 lg:px-12">
 
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif tracking-wide mb-2 sm:mb-3 md:mb-4">
-              {slide.title}
-            </h1>
+      {/* Left: Text Content */}
+      <div className="order-1 text-center md:text-left">
+        {/* Subtitle */}
+        <div className="mb-5 flex items-center justify-center gap-3 md:justify-start">
+          <span className="h-px w-6 bg-amber-600" />
 
-            <div className="flex items-baseline gap-3 sm:gap-4 mb-2 sm:mb-3 md:mb-4">
-              {slide.originalPrice && (
-                <span className="text-base sm:text-xl md:text-2xl text-white/70 line-through">
-                  {slide.originalPrice}
-                </span>
-              )}
-              <span className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
-                {slide.discountedPrice}
-              </span>
-            </div>
+          <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-amber-700 sm:text-xs">
+            {slide.subtitle}
+          </span>
 
-            <p className="text-xs sm:text-sm md:text-base text-white/90 whitespace-pre-line mb-4 sm:mb-5 md:mb-6">
-              {slide.description}
-            </p>
+          <span className="h-px w-6 bg-amber-600" />
+        </div>
 
-            <Button
-              size="lg"
-              className="bg-white text-emerald-900 hover:bg-white/90 font-semibold px-5 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 text-xs sm:text-sm md:text-base"
-              asChild
-            >
-              <Link href={slide.menuLink}>
-                {slide.buttonText || "View Menu"}
-              </Link>
-            </Button>
+        {/* Title */}
+        <h1 className="mb-5 font-serif text-4xl font-medium leading-[1.15] tracking-tight text-emerald-950 sm:text-5xl lg:text-6xl">
+          {slide.title}
+        </h1>
+
+        {/* Description */}
+        <p className="mx-auto mb-8 max-w-xl text-sm leading-7 text-gray-600 sm:text-base sm:leading-8 md:mx-0 lg:text-lg">
+          {slide.description}
+        </p>
+
+        {/* Menu Buttons */}
+        <div className="flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
+
+          <Link
+            href="/lunch"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg bg-emerald-800 px-8 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-800"
+          >
+            Katso lounaslista
+          </Link>
+
+          <Link
+            href="/a-la-carte"
+            className="inline-flex min-h-12 items-center justify-center rounded-lg border border-emerald-800 bg-transparent px-8 py-3 text-sm font-semibold text-emerald-900 transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-800 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-800"
+          >
+            À la Carte
+          </Link>
+        </div>
+      </div>
+
+      {/* Right: Food Image */}
+      <div className="order-2 w-full">
+        <div className="relative mx-auto w-full max-w-xl">
+          {/* Decorative background */}
+          <div
+            aria-hidden="true"
+            className="absolute -bottom-3 -right-3 h-full w-full rounded-[2rem] bg-amber-100 sm:-bottom-5 sm:-right-5"
+          />
+
+          {/* Main photo */}
+          <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[2rem] bg-amber-50 shadow-xl md:aspect-[4/5] lg:aspect-[5/4]">
+            <Image
+              src={slide.image}
+              alt={slide.imageAlt}
+              fill
+              priority={priority}
+              sizes="(max-width: 767px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default SlideContent;
+}

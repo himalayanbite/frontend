@@ -128,3 +128,17 @@
 
 
 
+
+#rg-award-himalayan-bite #rg26-b-gold > * {
+  box-sizing: content-box;
+}
+
+#rg-award-himalayan-bite {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  #rg-award-himalayan-bite {
+    margin-inline: auto;
+  }
+}

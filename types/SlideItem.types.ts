@@ -1,14 +1,8 @@
 export interface Slide {
   id: number;
-  title: string;
-  subtitle?: string;
-  originalPrice?: string;
-  discountedPrice: string;
-  description: string;
   image: string;
-  bgColor: string;
-  menuLink: string;  
-  buttonText?: string; 
+  imageAlt: string;
+  title: string;
+  subtitle: string;
+  description: string;
 }
-
-export type Slides = Slide[];
